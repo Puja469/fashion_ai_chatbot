@@ -1,0 +1,212 @@
+intent,user_message,bot_response,context,product_recommendations,styling_tips,image_urls
+greet,hello,Hi there! 👋 I'm your personal fashion assistant, ready to help you discover your perfect style! What can I help you with today?,casual conversation,,,
+greet,hi,Hey fashion lover! ✨ I'm here to help you look and feel amazing. What's on your mind today?,casual conversation,,,
+greet,good morning,Good morning! 🌅 Ready to start your day with some fabulous fashion inspiration? What would you like to explore today?,casual conversation,,,
+ask_recommendation,I need fashion advice,Of course! I'd love to help you with fashion advice! 💫 What specific area are you looking for help with? Are you thinking about:
+• Outfit recommendations for a special occasion
+• Building a capsule wardrobe
+• Finding your personal style
+• Seasonal trends and must-haves
+• Body type styling tips
+
+Tell me more about what you have in mind!,fashion advice request,"High-waisted jeans, silk blouse, leather crossbody bag","Layer pieces for versatility, accessorize with statement jewelry",https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400
+ask_recommendation,suggest an outfit,Great choice! Let me help you create the perfect outfit! 👗✨ 
+
+To give you the best recommendations, I'd love to know:
+• What's the occasion? (casual, work, date night, etc.)
+• What's your preferred style? (minimalist, trendy, classic, etc.)
+• Any specific colors you love or want to avoid?
+• What's your budget range?
+
+Once you share these details, I'll curate some amazing outfit combinations just for you!,outfit request,"Blazer dress, ankle boots, statement earrings","Mix high and low pieces, focus on fit over trends",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400
+ask_recommendation,what's trending,Exciting! Let me share what's hot right now! 🔥
+
+**Spring/Summer 2025 Trends:**
+• **Pastel Power** - Soft lavender, mint green, and peach tones
+• **Sustainable Fashion** - Eco-friendly materials and conscious shopping
+• **90s Revival** - High-waisted jeans, crop tops, and chunky sneakers
+• **Minimalist Maximalism** - Clean lines with bold accessories
+• **Athleisure 2.0** - Elevated activewear for everyday wear
+
+**Must-Have Pieces:**
+• Oversized blazers
+• Wide-leg pants
+• Statement jewelry
+• Comfortable heels
+• Crossbody bags
+
+Would you like me to show you specific pieces in any of these categories?,trends request,"Oversized blazer, wide-leg jeans, statement earrings","Start with one trendy piece, build around classics",https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400
+specify_category,I want jeans,Perfect! Jeans are a wardrobe essential! 👖 Let me show you some amazing options:
+
+**Our Top Jeans Picks:**
+
+1. **High-Waisted Skinny Jeans** - $49.99
+   - Flattering high-rise fit
+   - Stretch denim for comfort
+   - Perfect for tucking in tops
+
+2. **Relaxed Fit Straight Jeans** - $59.99
+   - Comfortable straight leg
+   - Versatile for any occasion
+   - Great for all body types
+
+3. **Wide-Leg Jeans** - $69.99
+   - Trendy wide-leg silhouette
+   - High-waisted design
+   - Perfect for creating long legs
+
+**Styling Tips:**
+• Pair with a tucked-in blouse for a polished look
+• Add a belt to define your waist
+• Wear with sneakers for casual or heels for dressy
+
+What style appeals to you most? I can show you more details and styling options!,jeans request,"High-waisted skinny jeans, relaxed fit straight jeans, wide-leg jeans","Tuck in tops, add belts, mix with different shoes",https://images.unsplash.com/photo-1542272604-787c3835535d?w=400
+specify_category,I need tops,Absolutely! Tops are the foundation of any great outfit! 👚 Here are some fabulous options:
+
+**Our Top Tops Picks:**
+
+1. **Relaxed Fit T-Shirt** - $24.99
+   - 100% organic cotton
+   - Perfect for layering
+   - Available in multiple colors
+
+2. **Silk Blouse** - $89.99
+   - Luxurious silk fabric
+   - Professional and elegant
+   - Perfect for work or special occasions
+
+3. **Chunky Knit Sweater** - $69.99
+   - Cozy wool blend
+   - Perfect for cold weather
+   - Relaxed, comfortable fit
+
+**Styling Tips:**
+• Layer t-shirts under blazers for a smart-casual look
+• Tuck silk blouses into high-waisted bottoms
+• Pair sweaters with jeans or skirts
+
+Which style catches your eye? I can show you more details and help you style them!,tops request,"Relaxed fit t-shirt, silk blouse, chunky knit sweater","Layer for versatility, tuck for polish, accessorize minimally",https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400
+specify_category,I want dresses,Gorgeous! Dresses are perfect for any occasion! 👗 Let me show you some stunning options:
+
+**Our Top Dresses Picks:**
+
+1. **Blazer Dress** - $89.99
+   - Professional and sophisticated
+   - Perfect for work or interviews
+   - Structured silhouette
+
+2. **Maxi Dress** - $79.99
+   - Beautiful floral pattern
+   - Perfect for summer events
+   - Flowy, romantic silhouette
+
+3. **Casual Midi Dress** - $59.99
+   - Versatile for everyday wear
+   - Comfortable and stylish
+   - Great for all body types
+
+**Styling Tips:**
+• Add a belt to define your waist
+• Layer with a denim jacket for casual looks
+• Accessorize with statement jewelry
+
+What occasion are you shopping for? I can recommend the perfect dress for you!,dresses request,"Blazer dress, maxi dress, casual midi dress","Add belts for definition, layer for versatility, accessorize thoughtfully",https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400
+ask_size_guide,size guide help,Of course! Let me help you find your perfect fit! 📏
+
+**How to Measure Yourself:**
+
+**Bust:** Measure around the fullest part of your chest
+**Waist:** Measure around your natural waistline
+**Hips:** Measure around the fullest part of your hips
+**Inseam:** Measure from crotch to desired length
+
+**Our Size Chart:**
+• **XS:** Bust 32", Waist 24", Hips 34"
+• **S:** Bust 34", Waist 26", Hips 36"
+• **M:** Bust 36", Waist 28", Hips 38"
+• **L:** Bust 38", Waist 30", Hips 40"
+• **XL:** Bust 40", Waist 32", Hips 42"
+• **XXL:** Bust 42", Waist 34", Hips 44"
+
+**Pro Tips:**
+• When in doubt, size up for comfort
+• Check the fit guide for each specific item
+• Consider your preferred fit (slim, regular, relaxed)
+
+What size are you looking for? I can help you find the perfect fit!,size guidance,,,,
+ask_price,how much does it cost,Great question! 💰 Our prices are designed to give you amazing style without breaking the bank:
+
+**Price Ranges:**
+• **Budget-Friendly:** $15-$39 (basics, accessories)
+• **Mid-Range:** $40-$79 (quality pieces, denim)
+• **Premium:** $80-$150 (luxury fabrics, special pieces)
+
+**Current Deals:**
+• **New Customer:** 15% off your first order
+• **Student Discount:** 10% off with valid ID
+• **Loyalty Program:** Earn points on every purchase
+
+**Value Promise:**
+We believe great style shouldn't cost a fortune! Our pieces are designed to last and provide excellent value for money.
+
+What's your budget range? I can show you the best options within your price point!,pricing information,,,,
+ask_care,how do I care for this,Excellent question! Taking care of your clothes helps them last longer! 🧺
+
+**General Care Tips:**
+
+**Washing:**
+• Check the care label on each item
+• Use cold water to preserve colors
+• Turn items inside out before washing
+• Use gentle detergent for delicate fabrics
+
+**Drying:**
+• Air dry when possible to prevent shrinking
+• Use low heat settings on dryer
+• Remove items promptly to prevent wrinkles
+
+**Storage:**
+• Fold knits and sweaters to prevent stretching
+• Hang dresses and blouses on padded hangers
+• Store in a cool, dry place
+
+**Special Care:**
+• **Silk:** Dry clean only
+• **Leather:** Condition regularly
+• **Denim:** Wash infrequently to maintain shape
+
+Would you like specific care instructions for a particular item?,care instructions,,,,
+ask_trends,what's in style,Exciting! Let me share what's trending right now! 🌟
+
+**Spring/Summer 2025 Trends:**
+
+**Colors:**
+• **Pastel Power:** Soft lavender, mint green, peach
+• **Neutral Neutrals:** Beige, cream, warm whites
+• **Bold Brights:** Electric blue, hot pink, sunshine yellow
+
+**Silhouettes:**
+• **Oversized Everything:** Blazers, sweaters, shirts
+• **High-Waisted:** Jeans, skirts, shorts
+• **Wide-Leg:** Pants, jeans, skirts
+
+**Fabrics:**
+• **Sustainable Materials:** Organic cotton, recycled polyester
+• **Textured Knits:** Chunky sweaters, cable knit
+• **Lightweight:** Linen, silk, breathable cotton
+
+**Accessories:**
+• **Statement Jewelry:** Bold earrings, layered necklaces
+• **Crossbody Bags:** Hands-free convenience
+• **Comfortable Heels:** Block heels, platform sandals
+
+**Must-Have Pieces:**
+• Oversized blazer
+• High-waisted wide-leg jeans
+• Statement earrings
+• Crossbody bag
+• Comfortable block heels
+
+Which trend interests you most? I can show you specific pieces!,trends information,"Oversized blazer, wide-leg jeans, statement earrings","Start with one trendy piece, build around classics",https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400
+goodbye,bye,Thanks for chatting with me! 👋 I hope I helped you discover some amazing fashion inspiration. Don't forget to check out our latest collection - there's always something new to love! Come back anytime for more style advice. Happy shopping! ✨,farewell,,,
+goodbye,goodbye,It's been a pleasure helping you with your style journey! 💫 Remember, great fashion is all about confidence and feeling amazing in what you wear. Check out our website for the latest trends and don't hesitate to come back for more fashion advice. Stay fabulous! 👗✨,farewell,,, 

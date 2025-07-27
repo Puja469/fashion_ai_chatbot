@@ -1,0 +1,301 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_recommendation
+  - specify_category
+  - specify_gender
+  - specify_color
+  - specify_occasion
+  - specify_style
+  - specify_budget
+  - specify_season
+  - ask_trending
+  - ask_outfit_combination
+  - ask_style_advice
+  - ask_size_guide
+  - ask_help
+  - specify_body_type
+  - specify_age_group
+  - specify_weather
+  - specify_event
+  - specify_preference
+  - ask_personalized_advice
+  - ask_fashion_tips
+  - ask_color_advice
+  - ask_occasion_specific
+  - ask_seasonal_advice
+  - ask_budget_advice
+  - ask_accessory_advice
+  - ask_fit_advice
+  - nlu_fallback
+
+entities:
+  - clothing_category
+  - gender
+  - color
+  - occasion
+  - style_preference
+  - budget
+  - season
+  - body_type
+  - age_group
+  - weather
+  - event
+  - preference
+
+slots:
+  clothing_category:
+    type: categorical
+    values:
+      - dresses
+      - tops
+      - bottoms
+      - shoes
+      - accessories
+      - outerwear
+    mappings:
+    - type: from_entity
+      entity: clothing_category
+  gender:
+    type: categorical
+    values:
+      - men
+      - women
+      - unisex
+    mappings:
+    - type: from_entity
+      entity: gender
+  color:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: color
+  occasion:
+    type: categorical
+    values:
+      - casual
+      - formal
+      - party
+      - work
+      - sport
+    mappings:
+    - type: from_entity
+      entity: occasion
+  style_preference:
+    type: categorical
+    values:
+      - classic
+      - trendy
+      - bohemian
+      - minimalist
+      - vintage
+    mappings:
+    - type: from_entity
+      entity: style_preference
+  budget:
+    type: categorical
+    values:
+      - low
+      - medium
+      - high
+    mappings:
+    - type: from_entity
+      entity: budget
+  season:
+    type: categorical
+    values:
+      - spring
+      - summer
+      - fall
+      - winter
+    mappings:
+    - type: from_entity
+      entity: season
+  body_type:
+    type: categorical
+    values:
+      - hourglass
+      - petite
+      - plus size
+      - rectangular
+      - tall
+      - slim
+      - curves
+      - athletic
+      - apple
+      - pear
+      - inverted triangle
+      - diamond
+      - oval
+      - triangle
+      - rectangle
+      - curvy
+      - short
+      - medium
+    mappings:
+    - type: from_entity
+      entity: body_type
+  age_group:
+    type: categorical
+    values:
+      - teens
+      - twenties
+      - thirties
+      - forties
+      - fifties
+      - sixties
+      - young
+      - middle aged
+      - senior
+      - teenager
+      - young adult
+      - professional
+      - student
+      - parent
+      - grandparent
+    mappings:
+    - type: from_entity
+      entity: age_group
+  weather:
+    type: categorical
+    values:
+      - sunny
+      - rainy
+      - cold
+      - hot
+      - warm
+      - cloudy
+      - snowing
+      - windy
+      - humid
+      - dry
+      - mild
+      - chilly
+      - freezing
+      - scorching
+      - pleasant
+    mappings:
+    - type: from_entity
+      entity: weather
+  event:
+    type: categorical
+    values:
+      - wedding
+      - job interview
+      - date
+      - business meeting
+      - birthday party
+      - concert
+      - graduation
+      - conference
+      - dinner party
+      - cocktail party
+      - family gathering
+      - formal dinner
+      - presentation
+      - gala
+      - reunion
+    mappings:
+    - type: from_entity
+      entity: event
+  preference:
+    type: categorical
+    values:
+      - comfortable
+      - stylish
+      - elegant
+      - casual
+      - sophisticated
+      - trendy
+      - modest
+      - bold
+      - neutral
+      - loose
+      - fitted
+      - oversized
+      - minimalist
+      - detailed
+      - simple
+    mappings:
+    - type: from_entity
+      entity: preference
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm your fashion assistant. I can help you with clothing recommendations, trending items, outfit combinations, and style advice. What would you like to know?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a stylish day!"
+
+  utter_help:
+    - text: "I can help you with:\n• Clothing recommendations\n• Trending fashion items\n• Outfit combinations\n• Style advice\n• Size guides\n\nJust ask me what you need!"
+
+  utter_ask_category:
+    - text: "What type of clothing are you looking for? (dresses, tops, bottoms, shoes, accessories, outerwear)"
+
+  utter_ask_gender:
+    - text: "What gender are you shopping for? (men, women, unisex)"
+
+  utter_ask_color:
+    - text: "What color would you prefer?"
+
+  utter_ask_occasion:
+    - text: "What occasion are you shopping for? (casual, formal, party, work, sport)"
+
+  utter_ask_style:
+    - text: "What style do you prefer? (classic, trendy, bohemian, minimalist, vintage)"
+
+  utter_ask_budget:
+    - text: "What's your budget range? (low, medium, high)"
+
+  utter_ask_season:
+    - text: "What season are you shopping for? (spring, summer, fall, winter)"
+
+  utter_ask_body_type:
+    - text: "What's your body type? This helps me give you more personalized recommendations. (hourglass, petite, plus size, rectangular, tall, slim, curves, athletic, apple, pear, inverted triangle, diamond, oval, triangle, rectangle, curvy, short, medium)"
+
+  utter_ask_age_group:
+    - text: "What age group are you in? This helps me suggest age-appropriate styles. (teens, twenties, thirties, forties, fifties, sixties, young, middle aged, senior, teenager, young adult, professional, student, parent, grandparent)"
+
+  utter_ask_weather:
+    - text: "What's the weather like today? This helps me suggest appropriate clothing. (sunny, rainy, cold, hot, warm, cloudy, snowing, windy, humid, dry, mild, chilly, freezing, scorching, pleasant)"
+
+  utter_ask_event:
+    - text: "What event are you dressing for? (wedding, job interview, date, business meeting, birthday party, concert, graduation, conference, dinner party, cocktail party, family gathering, formal dinner, presentation, gala, reunion)"
+
+  utter_ask_preference:
+    - text: "What's your style preference? (comfortable, stylish, elegant, casual, sophisticated, trendy, modest, bold, neutral, loose, fitted, oversized, minimalist, detailed, simple)"
+
+  utter_style_advice:
+    - text: "Here are some style tips for you:\n\n• For a classic look: Stick to neutral colors and timeless pieces like blazers, tailored pants, and simple dresses.\n• For a trendy style: Experiment with current fashion trends, bold colors, and statement pieces.\n• For a bohemian vibe: Choose flowy fabrics, earthy tones, and layered accessories.\n• For a minimalist approach: Focus on clean lines, simple silhouettes, and a neutral color palette.\n• For a vintage aesthetic: Look for retro-inspired pieces, classic cuts, and timeless accessories.\n\nWould you like more specific advice based on your body type, age, or occasion?"
+
+  utter_color_advice:
+    - text: "Here are some color coordination tips:\n\n• **Neutral Colors**: Black, white, gray, beige, and navy are versatile and easy to mix.\n• **Complementary Colors**: Colors opposite on the color wheel (like blue and orange) create bold looks.\n• **Monochromatic**: Different shades of the same color create a sophisticated look.\n• **Analogous Colors**: Colors next to each other on the color wheel (like blue, green, teal) work harmoniously.\n• **Color Psychology**: Red for confidence, blue for trust, green for calm, yellow for optimism.\n\nFor your skin tone, warm undertones look great in earth tones, while cool undertones shine in jewel tones!"
+
+  utter_occasion_specific:
+    - text: "Here's what to wear for different occasions:\n\n• **Wedding**: Elegant dress or suit, avoid white, dress for the venue\n• **Job Interview**: Professional attire, neutral colors, well-fitted clothing\n• **Date**: Something that makes you feel confident, appropriate for the venue\n• **Party**: Trendy or festive clothing, consider the party theme\n• **Work**: Professional and comfortable, follow company dress code\n• **Casual**: Comfortable and stylish, jeans and nice tops work well\n• **Formal**: Sophisticated attire, dark colors, elegant accessories\n\nWhat specific occasion are you dressing for?"
+
+  utter_seasonal_advice:
+    - text: "Seasonal fashion tips:\n\n• **Spring**: Light layers, pastel colors, floral prints, light jackets\n• **Summer**: Breathable fabrics, light colors, shorts, sundresses, sandals\n• **Fall**: Layered clothing, warm colors, boots, scarves, jackets\n• **Winter**: Warm layers, dark colors, coats, boots, scarves, gloves\n\nCurrent season trends include sustainable fashion, comfort-focused pieces, and versatile items that work across seasons. What season are you shopping for?"
+
+  utter_budget_advice:
+    - text: "Budget-friendly fashion tips:\n\n• **Shop Sales**: Wait for seasonal sales and clearance events\n• **Thrift Shopping**: Find unique pieces at affordable prices\n• **Investment Pieces**: Spend more on classic items that last\n• **Mix High & Low**: Pair expensive items with affordable basics\n• **Care for Clothes**: Proper care extends garment life\n• **Capsule Wardrobe**: Build a versatile collection of mix-and-match pieces\n• **DIY & Alterations**: Learn basic sewing to customize clothes\n• **Rent for Special Occasions**: Save money on one-time wear\n\nWhat's your budget range for this purchase?"
+
+  utter_accessory_advice:
+    - text: "Accessory styling tips:\n\n• **Jewelry**: Choose pieces that complement your outfit and skin tone\n• **Bags**: Match bag size to occasion and outfit proportions\n• **Scarves**: Add color and texture, perfect for layering\n• **Belts**: Define waist and add structure to outfits\n• **Shoes**: Consider comfort and occasion appropriateness\n• **Hats**: Add personality and protect from weather\n• **Sunglasses**: Choose frames that suit your face shape\n\nRemember: Less is often more. Choose 2-3 key accessories per outfit to avoid looking cluttered!"
+
+  utter_fit_advice:
+    - text: "Fit advice for different body types:\n\n• **Shoulders**: Shoulder seams should align with your natural shoulder line\n• **Chest**: Buttons shouldn't pull, fabric should lay flat\n• **Waist**: Should skim your body without being too tight or loose\n• **Hips**: Pants should fit comfortably without gaping\n• **Length**: Pants should break at the right point, sleeves at wrist\n• **Movement**: You should be able to move comfortably\n\nRemember: Proper fit is more important than size numbers. Different brands fit differently!"
+
+actions:
+  - action_give_recommendation
+  - action_trending_items
+  - action_outfit_combination
+  - action_style_advice
+  - action_size_guide
+  - action_gemini_fallback
+  - action_default_fallback

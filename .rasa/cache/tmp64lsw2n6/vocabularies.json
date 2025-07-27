@@ -1,0 +1,38 @@
+{
+  "text": {
+    "hi": 6,
+    "hello": 4,
+    "hey": 5,
+    "good": 2,
+    "morning": 7,
+    "evening": 1,
+    "bye": 0,
+    "goodbye": 3,
+    "see": 9,
+    "you": 10,
+    "night": 8
+  },
+  "intent": {
+    "greet": 1,
+    "goodbye": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "utter_goodbye": 12,
+    "utter_greet": 13
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

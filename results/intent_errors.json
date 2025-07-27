@@ -1,0 +1,10 @@
+[
+  {
+    "text": "style recommendations",
+    "intent": "ask_style_advice",
+    "intent_prediction": {
+      "name": "ask_styling_advice",
+      "confidence": 0.7363401651382446
+    }
+  }
+]

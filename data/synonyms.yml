@@ -1,0 +1,100 @@
+version: "3.1"
+
+synonyms:
+- synonym: dresses
+  examples: |
+    - dress
+    - dresses
+    - gown
+    - gowns
+    - frock
+    - frocks
+
+- synonym: tops
+  examples: |
+    - top
+    - tops
+    - shirt
+    - shirts
+    - blouse
+    - blouses
+    - t-shirt
+    - t-shirts
+    - tee
+    - tees
+
+- synonym: bottoms
+  examples: |
+    - bottom
+    - bottoms
+    - pants
+    - trousers
+    - jeans
+    - skirt
+    - skirts
+    - shorts
+    - leggings
+
+- synonym: shoes
+  examples: |
+    - shoe
+    - shoes
+    - footwear
+    - sneakers
+    - heels
+    - boots
+    - sandals
+    - flats
+    - pumps
+
+- synonym: accessories
+  examples: |
+    - accessory
+    - accessories
+    - bag
+    - bags
+    - purse
+    - purses
+    - jewelry
+    - necklace
+    - earrings
+    - bracelet
+    - watch
+    - belt
+    - scarf
+    - hat
+
+- synonym: outerwear
+  examples: |
+    - jacket
+    - jackets
+    - coat
+    - coats
+    - sweater
+    - sweaters
+    - cardigan
+    - cardigans
+    - hoodie
+    - hoodies
+    - blazer
+    - blazers
+
+- synonym: female
+  examples: |
+    - women
+    - woman
+    - female
+    - ladies
+    - lady
+    - girl
+    - girls
+
+- synonym: male
+  examples: |
+    - men
+    - man
+    - male
+    - guys
+    - guy
+    - boy
+    - boys 

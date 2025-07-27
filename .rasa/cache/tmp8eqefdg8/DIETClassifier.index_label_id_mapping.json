@@ -1,0 +1,23 @@
+{
+  "0": "affirm",
+  "1": "ask_help",
+  "2": "ask_outfit_combination",
+  "3": "ask_recommendation",
+  "4": "ask_size_guide",
+  "5": "ask_style_advice",
+  "6": "ask_trending",
+  "7": "bot_challenge",
+  "8": "deny",
+  "9": "goodbye",
+  "10": "greet",
+  "11": "mood_great",
+  "12": "mood_unhappy",
+  "13": "nlu_fallback",
+  "14": "specify_budget",
+  "15": "specify_category",
+  "16": "specify_color",
+  "17": "specify_gender",
+  "18": "specify_occasion",
+  "19": "specify_season",
+  "20": "specify_style"
+}

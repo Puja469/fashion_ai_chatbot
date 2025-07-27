@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: Say hello anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle help request
+  steps:
+  - intent: ask_help
+  - action: utter_help
+
+- rule: Handle affirm
+  steps:
+  - intent: affirm
+  - action: utter_greet
+
+- rule: Handle deny
+  steps:
+  - intent: deny
+  - action: utter_goodbye
+
+- rule: Default fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback

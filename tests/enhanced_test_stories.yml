@@ -1,0 +1,195 @@
+version: "3.1"
+
+stories:
+- story: test enhanced category recognition
+  steps:
+  - user: |
+      I want dresses
+    intent: specify_category
+    entities:
+    - clothing_category: dresses
+  - action: utter_ask_gender
+
+- story: test enhanced color recognition
+  steps:
+  - user: |
+      I want blue clothes
+    intent: specify_color
+    entities:
+    - color: blue
+  - action: action_give_recommendation
+
+- story: test enhanced occasion recognition
+  steps:
+  - user: |
+      I need formal clothes
+    intent: specify_occasion
+    entities:
+    - occasion: formal
+  - action: action_give_recommendation
+
+- story: test enhanced style recognition
+  steps:
+  - user: |
+      I prefer classic style
+    intent: specify_style
+    entities:
+    - style_preference: classic
+  - action: action_give_recommendation
+
+- story: test enhanced budget recognition
+  steps:
+  - user: |
+      I have a low budget
+    intent: specify_budget
+    entities:
+    - budget: low
+  - action: action_give_recommendation
+
+- story: test enhanced season recognition
+  steps:
+  - user: |
+      I need summer clothes
+    intent: specify_season
+    entities:
+    - season: summer
+  - action: action_give_recommendation
+
+- story: test enhanced body type recognition
+  steps:
+  - user: |
+      I have an hourglass body type
+    intent: specify_body_type
+    entities:
+    - body_type: hourglass
+  - action: action_style_advice
+
+- story: test enhanced age group recognition
+  steps:
+  - user: |
+      I'm in my thirties
+    intent: specify_age_group
+    entities:
+    - age_group: thirties
+  - action: action_style_advice
+
+- story: test enhanced weather recognition
+  steps:
+  - user: |
+      it's sunny today
+    intent: specify_weather
+    entities:
+    - weather: sunny
+  - action: action_give_recommendation
+
+- story: test enhanced event recognition
+  steps:
+  - user: |
+      I have a wedding to attend
+    intent: specify_event
+    entities:
+    - event: wedding
+  - action: action_give_recommendation
+
+- story: test enhanced preference recognition
+  steps:
+  - user: |
+      I prefer comfortable clothes
+    intent: specify_preference
+    entities:
+    - preference: comfortable
+  - action: action_style_advice
+
+- story: test enhanced trending request
+  steps:
+  - user: |
+      what's trending right now
+    intent: ask_trending
+  - action: action_trending_items
+
+- story: test enhanced outfit combination request
+  steps:
+  - user: |
+      how to put together an outfit
+    intent: ask_outfit_combination
+  - action: action_outfit_combination
+
+- story: test enhanced style advice request
+  steps:
+  - user: |
+      I need fashion advice
+    intent: ask_style_advice
+  - action: action_style_advice
+
+- story: test enhanced size guide request
+  steps:
+  - user: |
+      I need help with sizing
+    intent: ask_size_guide
+  - action: action_size_guide
+
+- story: test enhanced personalized advice request
+  steps:
+  - user: |
+      what looks good on my body type
+    intent: ask_personalized_advice
+  - action: utter_ask_body_type
+
+- story: test enhanced fashion tips request
+  steps:
+  - user: |
+      how to mix and match clothes
+    intent: ask_fashion_tips
+  - action: action_style_advice
+
+- story: test enhanced help request
+  steps:
+  - user: |
+      I need assistance
+    intent: ask_help
+  - action: utter_help
+
+- story: test enhanced greeting
+  steps:
+  - user: |
+      hello fashion assistant
+    intent: greet
+  - action: utter_greet
+
+- story: test enhanced goodbye
+  steps:
+  - user: |
+      see you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: test complex recommendation flow
+  steps:
+  - user: |
+      I want dresses for a wedding
+    intent: specify_category
+    entities:
+    - clothing_category: dresses
+    - event: wedding
+  - action: action_give_recommendation
+
+- story: test complex style request
+  steps:
+  - user: |
+      I need blue jeans for casual wear
+    intent: specify_category
+    entities:
+    - clothing_category: jeans
+    - color: blue
+    - occasion: casual
+  - action: action_give_recommendation
+
+- story: test complex personalized request
+  steps:
+  - user: |
+      I'm petite and want trendy clothes
+    intent: ask_personalized_advice
+    entities:
+    - body_type: petite
+    - style_preference: trendy
+  - action: action_style_advice 

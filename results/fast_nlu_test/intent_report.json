@@ -1,0 +1,182 @@
+{
+  "specify_category": {
+    "precision": 0.9968944099378882,
+    "recall": 1.0,
+    "f1-score": 0.9984447900466563,
+    "support": 321,
+    "confused_with": {}
+  },
+  "ask_trending": {
+    "precision": 0.676923076923077,
+    "recall": 0.9777777777777777,
+    "f1-score": 0.8000000000000002,
+    "support": 45,
+    "confused_with": {
+      "ask_style_advice": 1
+    }
+  },
+  "specify_gender": {
+    "precision": 0.9230769230769231,
+    "recall": 1.0,
+    "f1-score": 0.9600000000000001,
+    "support": 12,
+    "confused_with": {}
+  },
+  "ask_price": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 38,
+    "confused_with": {
+      "ask_trending": 19,
+      "ask_style_advice": 11,
+      "specify_color": 3
+    }
+  },
+  "specify_body_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30,
+    "confused_with": {}
+  },
+  "ask_style_advice": {
+    "precision": 0.5555555555555556,
+    "recall": 1.0,
+    "f1-score": 0.7142857142857143,
+    "support": 35,
+    "confused_with": {}
+  },
+  "specify_occasion": {
+    "precision": 0.8421052631578947,
+    "recall": 1.0,
+    "f1-score": 0.9142857142857143,
+    "support": 16,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 0.64,
+    "recall": 1.0,
+    "f1-score": 0.7804878048780487,
+    "support": 16,
+    "confused_with": {}
+  },
+  "ask_outfit_combination": {
+    "precision": 0.8235294117647058,
+    "recall": 1.0,
+    "f1-score": 0.9032258064516129,
+    "support": 14,
+    "confused_with": {}
+  },
+  "nlu_fallback": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 50,
+    "confused_with": {
+      "ask_help": 22,
+      "deny": 9,
+      "ask_recommendation": 7
+    }
+  },
+  "ask_recommendation": {
+    "precision": 0.8043478260869565,
+    "recall": 1.0,
+    "f1-score": 0.891566265060241,
+    "support": 74,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 0.9230769230769231,
+    "recall": 1.0,
+    "f1-score": 0.9600000000000001,
+    "support": 12,
+    "confused_with": {}
+  },
+  "specify_season": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "specify_color": {
+    "precision": 0.6363636363636364,
+    "recall": 1.0,
+    "f1-score": 0.7777777777777778,
+    "support": 14,
+    "confused_with": {}
+  },
+  "specify_style": {
+    "precision": 0.9333333333333333,
+    "recall": 1.0,
+    "f1-score": 0.9655172413793104,
+    "support": 14,
+    "confused_with": {}
+  },
+  "ask_help": {
+    "precision": 0.2647058823529412,
+    "recall": 1.0,
+    "f1-score": 0.4186046511627907,
+    "support": 9,
+    "confused_with": {}
+  },
+  "specify_budget": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "ask_size_guide": {
+    "precision": 0.9024390243902439,
+    "recall": 1.0,
+    "f1-score": 0.9487179487179488,
+    "support": 37,
+    "confused_with": {}
+  },
+  "ask_care": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 37,
+    "confused_with": {
+      "ask_style_advice": 15,
+      "ask_recommendation": 9,
+      "ask_size_guide": 4
+    }
+  },
+  "greet": {
+    "precision": 0.90625,
+    "recall": 1.0,
+    "f1-score": 0.9508196721311475,
+    "support": 29,
+    "confused_with": {}
+  },
+  "accuracy": 0.851764705882353,
+  "macro avg": {
+    "precision": 0.70612386981048,
+    "recall": 0.8560846560846561,
+    "f1-score": 0.7611301612465221,
+    "support": 850
+  },
+  "weighted avg": {
+    "precision": 0.7621851460881544,
+    "recall": 0.851764705882353,
+    "f1-score": 0.797797794752246,
+    "support": 850
+  },
+  "micro avg": {
+    "precision": 0.851764705882353,
+    "recall": 0.851764705882353,
+    "f1-score": 0.851764705882353,
+    "support": 850
+  }
+}

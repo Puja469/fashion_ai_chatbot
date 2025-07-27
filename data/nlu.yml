@@ -1,0 +1,1348 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi there
+    - what's up
+    - howdy
+    - greetings
+    - hey fashion assistant
+    - hello fashion bot
+    - hi there fashion expert
+    - good morning stylist
+    - hey style helper
+    - hello fashion guru
+    - hi fashion advisor
+    - good evening style assistant
+    - hey there fashion friend
+    - hello there
+    - hi fashion buddy
+    - good afternoon fashion expert
+    - hey fashion consultant
+    - hello there style guru
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks bye
+    - talk to you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right
+    - absolutely
+    - sure
+    - definitely
+    - exactly
+    - that's right
+    - yep
+    - yeah
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - nah
+    - not interested
+
+- intent: ask_recommendation
+  examples: |
+    - I need fashion advice
+    - can you recommend something to wear
+    - what should I wear
+    - I'm looking for clothing recommendations
+    - help me choose an outfit
+    - suggest something stylish
+    - I need style advice
+    - recommend me some clothes
+    - I want to look good
+    - help me with my wardrobe
+    - suggest an outfit
+    - I need a fashion consultation
+    - what should I wear for 2025
+    - give me 2025 fashion tips
+    - recommend trendy clothes
+    - I want clothes
+    - I want clothing
+    - I want fashion
+    - I want style
+    - I want outfits
+    - I want apparel
+    - I want garments
+    - I want attire
+    - I want wear
+    - I want to shop
+    - I want to buy clothes
+    - I want to buy fashion
+    - I want to buy style
+    - I want to buy outfits
+    - I want to buy apparel
+    - I want to buy garments
+    - I want to buy attire
+    - I want to buy wear
+    - I want to purchase clothes
+    - I want to purchase fashion
+    - I want to purchase style
+    - I want to purchase outfits
+    - I want to purchase apparel
+    - I want to purchase garments
+    - I want to purchase attire
+    - I want to purchase wear
+    - I want something to wear
+    - I want some clothes
+    - I want some fashion
+    - I want some style
+    - I want some outfits
+    - I want some apparel
+    - I want some garments
+    - I want some attire
+    - I want some wear
+
+- intent: specify_category
+  examples: |
+    - I'm looking for [dresses](clothing_category)
+    - I need [tops](clothing_category)
+    - show me [bottoms](clothing_category)
+    - I want [shoes](clothing_category)
+    - looking for [accessories](clothing_category)
+    - I need [outerwear](clothing_category)
+    - I want [dresses](clothing_category)
+    - show me [tops](clothing_category)
+    - recommend [shoes](clothing_category)
+    - suggest [accessories](clothing_category)
+    - I want casual jeans
+    - I need casual jeans
+    - show me casual jeans
+    - looking for casual jeans
+    - recommend casual jeans
+    - suggest casual jeans
+    - I want jeans
+    - I need jeans
+    - show me jeans
+    - looking for jeans
+    - recommend jeans
+    - suggest jeans
+    - I want tops
+    - I need tops
+    - show me tops
+    - looking for tops
+    - recommend tops
+    - suggest tops
+    - I want shirts
+    - I need shirts
+    - show me shirts
+    - looking for shirts
+    - recommend shirts
+    - suggest shirts
+    - I want pants
+    - I need pants
+    - show me pants
+    - looking for pants
+    - recommend pants
+    - suggest pants
+    - I want dresses
+    - I need dresses
+    - show me dresses
+    - looking for dresses
+    - recommend dresses
+    - suggest dresses
+    - I want shoes
+    - I need shoes
+    - show me shoes
+    - looking for shoes
+    - recommend shoes
+    - suggest shoes
+    - I want accessories
+    - I need accessories
+    - show me accessories
+    - looking for accessories
+    - recommend accessories
+    - suggest accessories
+    - I want outerwear
+    - I need outerwear
+    - show me outerwear
+    - looking for outerwear
+    - recommend outerwear
+    - suggest outerwear
+    - I'm shopping for [dresses](clothing_category)
+    - I'm browsing [tops](clothing_category)
+    - I'm interested in [bottoms](clothing_category)
+    - I'm looking to buy [shoes](clothing_category)
+    - I'm searching for [accessories](clothing_category)
+    - I'm in the market for [outerwear](clothing_category)
+    - Can you show me some [dresses](clothing_category)?
+    - Do you have any [tops](clothing_category)?
+    - What [bottoms](clothing_category) do you recommend?
+    - I'd like to see [shoes](clothing_category)
+    - Any suggestions for [accessories](clothing_category)?
+    - I need help with [outerwear](clothing_category)
+    - I'm after [dresses](clothing_category)
+    - I'm hunting for [tops](clothing_category)
+    - I'm seeking [bottoms](clothing_category)
+    - I'm after some [shoes](clothing_category)
+    - I'm looking for [accessories](clothing_category)
+    - I'm in need of [outerwear](clothing_category)
+    - I want to buy [dresses](clothing_category)
+    - I want to purchase [tops](clothing_category)
+    - I want to get [bottoms](clothing_category)
+    - I want to find [shoes](clothing_category)
+    - I want to shop for [accessories](clothing_category)
+    - I want to invest in [outerwear](clothing_category)
+    - I'm thinking about [dresses](clothing_category)
+    - I'm considering [tops](clothing_category)
+    - I'm planning to buy [bottoms](clothing_category)
+    - I'm thinking of getting [shoes](clothing_category)
+    - I'm considering [accessories](clothing_category)
+    - I'm planning to purchase [outerwear](clothing_category)
+
+- intent: specify_gender
+  examples: |
+    - for [women](gender)
+    - [women](gender)'s clothing
+    - [men](gender)'s fashion
+    - for [men](gender)
+    - [unisex](gender) clothing
+    - for [unisex](gender)
+    - I'm a [woman](gender)
+    - I'm a [man](gender)
+    - I'm [female](gender)
+    - I'm [male](gender)
+    - I'm looking for [women](gender)'s clothes
+    - I need [men](gender)'s fashion
+    - show me [women](gender)'s dresses
+    - I want [men](gender)'s shirts
+    - recommend [women](gender)'s shoes
+    - suggest [men](gender)'s pants
+    - [women](gender)'s style
+    - [men](gender)'s style
+    - [unisex](gender) style
+
+- intent: specify_color
+  examples: |
+    - I want [blue](color) clothes
+    - I need [red](color) dresses
+    - show me [black](color) shoes
+    - looking for [white](color) shirts
+    - recommend [green](color) pants
+    - suggest [yellow](color) accessories
+    - I prefer [purple](color)
+    - I like [pink](color)
+    - [orange](color) clothing
+    - [brown](color) fashion
+    - [gray](color) style
+    - [navy](color) clothes
+    - [beige](color) dresses
+    - [maroon](color) shoes
+    - [teal](color) shirts
+    - [coral](color) pants
+    - [lavender](color) accessories
+    - [mint](color) clothing
+    - [olive](color) fashion
+    - [burgundy](color) style
+    - I'm looking for [blue](color) items
+    - I need something in [red](color)
+    - Show me [black](color) options
+    - I prefer [white](color) clothing
+    - I like [green](color) tones
+    - I want [yellow](color) pieces
+    - I'm drawn to [purple](color)
+    - I love [pink](color) clothes
+    - I'm interested in [orange](color)
+    - I like [brown](color) shades
+    - I prefer [gray](color) colors
+    - I want [navy](color) clothing
+    - I like [beige](color) tones
+    - I'm looking for [maroon](color)
+    - I want [teal](color) items
+    - I like [coral](color) shades
+    - I prefer [lavender](color)
+    - I want [mint](color) clothing
+    - I like [olive](color) tones
+    - I'm interested in [burgundy](color)
+    - I want [blue](color) colored clothes
+    - I need [red](color) colored dresses
+    - Show me [black](color) colored shoes
+    - I'm looking for [white](color) colored shirts
+    - Recommend [green](color) colored pants
+    - Suggest [yellow](color) colored accessories
+    - I prefer [purple](color) colored items
+    - I like [pink](color) colored clothing
+    - I want [orange](color) colored fashion
+    - I like [brown](color) colored style
+    - I prefer [gray](color) colored clothes
+    - I want [navy](color) colored dresses
+    - I like [beige](color) colored shoes
+    - I'm looking for [maroon](color) colored shirts
+    - I want [teal](color) colored pants
+    - I like [coral](color) colored accessories
+    - I prefer [lavender](color) colored clothing
+    - I want [mint](color) colored fashion
+    - I like [olive](color) colored style
+    - I'm interested in [burgundy](color) colored items
+
+- intent: specify_occasion
+  examples: |
+    - for a [casual](occasion) day
+    - [formal](occasion) event
+    - [party](occasion) outfit
+    - [work](occasion) clothes
+    - [sport](occasion) wear
+    - I need [casual](occasion) clothes
+    - looking for [formal](occasion) dress
+    - recommend [party](occasion) outfit
+    - suggest [work](occasion) attire
+    - I want [sport](occasion) clothing
+    - [casual](occasion) style
+    - [formal](occasion) fashion
+    - [party](occasion) look
+    - [work](occasion) appropriate
+    - [sport](occasion) gear
+    - I'm going to a [casual](occasion) event
+    - I have a [formal](occasion) function
+    - I need a [party](occasion) look
+    - I'm dressing for [work](occasion)
+    - I'm doing [sport](occasion) activities
+    - It's for a [casual](occasion) occasion
+    - It's a [formal](occasion) gathering
+    - I'm attending a [party](occasion)
+    - I need [work](occasion) appropriate clothing
+    - I'm participating in [sport](occasion)
+    - I want something [casual](occasion)
+    - I need [formal](occasion) attire
+    - I'm looking for [party](occasion) clothes
+    - I need [work](occasion) wear
+    - I want [sport](occasion) gear
+    - For [casual](occasion) wear
+    - For [formal](occasion) events
+    - For [party](occasion) occasions
+    - For [work](occasion) settings
+    - For [sport](occasion) activities
+    - I'm after [casual](occasion) clothing
+    - I'm seeking [formal](occasion) attire
+    - I'm looking for [party](occasion) outfits
+    - I need [work](occasion) clothing
+    - I want [sport](occasion) wear
+
+- intent: specify_style
+  examples: |
+    - I prefer [classic](style_preference) style
+    - I like [trendy](style_preference) fashion
+    - [bohemian](style_preference) look
+    - [minimalist](style_preference) style
+    - [vintage](style_preference) fashion
+    - I want [classic](style_preference) clothes
+    - looking for [trendy](style_preference) items
+    - recommend [bohemian](style_preference) style
+    - suggest [minimalist](style_preference) fashion
+    - I need [vintage](style_preference) look
+    - [classic](style_preference) fashion
+    - [trendy](style_preference) style
+    - [bohemian](style_preference) clothing
+    - [minimalist](style_preference) attire
+    - [vintage](style_preference) wear
+    - I'm into [classic](style_preference) looks
+    - I love [trendy](style_preference) fashion
+    - I'm drawn to [bohemian](style_preference) style
+    - I prefer [minimalist](style_preference) designs
+    - I like [vintage](style_preference) clothing
+    - I want [classic](style_preference) pieces
+    - I'm looking for [trendy](style_preference) items
+    - I need [bohemian](style_preference) clothing
+    - I want [minimalist](style_preference) fashion
+    - I'm after [vintage](style_preference) style
+    - I'm seeking [classic](style_preference) clothing
+    - I'm interested in [trendy](style_preference) fashion
+    - I want [bohemian](style_preference) pieces
+    - I prefer [minimalist](style_preference) attire
+    - I like [vintage](style_preference) looks
+    - I'm going for [classic](style_preference) style
+    - I'm aiming for [trendy](style_preference) fashion
+    - I want a [bohemian](style_preference) look
+    - I prefer [minimalist](style_preference) clothing
+    - I'm into [vintage](style_preference) fashion
+
+- intent: specify_budget
+  examples: |
+    - [low](budget) budget
+    - [medium](budget) price range
+    - [high](budget) end
+    - I have a [low](budget) budget
+    - looking for [medium](budget) priced items
+    - I want [high](budget) quality
+    - recommend [low](budget) cost clothes
+    - suggest [medium](budget) range fashion
+    - I can afford [high](budget) end items
+    - [low](budget) cost
+    - [medium](budget) budget
+    - [high](budget) price
+    - affordable [low](budget)
+    - mid-range [medium](budget)
+    - luxury [high](budget)
+    - I'm on a [low](budget) budget
+    - I'm looking for [medium](budget) priced clothing
+    - I want [high](budget) end fashion
+    - I have a [low](budget) price range
+    - I prefer [medium](budget) cost items
+    - I can spend [high](budget) amounts
+    - I need [low](budget) cost options
+    - I want [medium](budget) range clothing
+    - I'm interested in [high](budget) quality
+    - I'm shopping on a [low](budget) budget
+    - I'm looking for [medium](budget) priced fashion
+    - I want [high](budget) end clothing
+    - I have a [low](budget) spending limit
+    - I prefer [medium](budget) cost fashion
+    - I can afford [high](budget) end items
+    - I need [low](budget) cost clothes
+    - I want [medium](budget) range items
+    - I'm interested in [high](budget) quality fashion
+    - I'm working with a [low](budget) budget
+    - I'm seeking [medium](budget) priced clothing
+    - I want [high](budget) end fashion items
+
+- intent: specify_season
+  examples: |
+    - for [spring](season)
+    - [summer](season) clothes
+    - [fall](season) fashion
+    - [winter](season) wear
+    - I need [spring](season) clothes
+    - looking for [summer](season) dresses
+    - recommend [fall](season) outfits
+    - suggest [winter](season) clothing
+    - [spring](season) style
+    - [summer](season) fashion
+    - [fall](season) look
+    - [winter](season) attire
+    - [spring](season) collection
+    - [summer](season) wardrobe
+    - [fall](season) trends
+    - [winter](season) essentials
+    - I'm shopping for [spring](season)
+    - I need [summer](season) clothing
+    - I'm looking for [fall](season) fashion
+    - I want [winter](season) clothes
+    - I'm preparing for [spring](season)
+    - I need [summer](season) outfits
+    - I'm getting ready for [fall](season)
+    - I want [winter](season) wear
+    - I'm planning for [spring](season)
+    - I need [summer](season) style
+    - I'm thinking about [fall](season)
+    - I want [winter](season) fashion
+    - I'm shopping for [spring](season) clothes
+    - I need [summer](season) clothing
+    - I'm looking for [fall](season) outfits
+    - I want [winter](season) attire
+    - I'm preparing for [spring](season) fashion
+    - I need [summer](season) wear
+    - I'm getting ready for [fall](season) clothing
+    - I want [winter](season) style
+    - I'm planning for [spring](season) wardrobe
+    - I need [summer](season) collection
+    - I'm thinking about [fall](season) trends
+    - I want [winter](season) essentials
+
+- intent: ask_trending
+  examples: |
+    - what's trending
+    - show me trending items
+    - what's popular now
+    - trending fashion
+    - popular clothes
+    - what's in style
+    - current trends
+    - fashion trends
+    - what's hot right now
+    - trending now
+    - popular items
+    - what's fashionable
+    - current fashion
+    - hot trends
+    - what's new in fashion
+    - what's trending right now
+    - show me what's popular
+    - what's the latest trend
+    - what's hot in fashion
+    - what's currently trending
+    - what's in vogue
+    - what's the current trend
+    - what's popular this season
+    - what's trending this year
+    - what's hot this season
+    - what's new and trendy
+    - what's the latest fashion
+    - what's trending in fashion
+    - what's popular in clothing
+    - what's hot in style
+    - what's currently in fashion
+    - what's the trend right now
+    - what's popular in fashion
+    - what's trending in style
+    - what's hot in clothing
+    - what's the current fashion trend
+
+- intent: ask_outfit_combination
+  examples: |
+    - outfit combination
+    - complete outfit
+    - full look
+    - outfit ideas
+    - how to style
+    - outfit suggestions
+    - complete ensemble
+    - full outfit
+    - styling tips
+    - how to wear
+    - outfit coordination
+    - matching clothes
+    - complete look
+    - outfit planning
+    - style combination
+    - how to put together an outfit
+    - what goes with this
+    - how to match clothes
+    - complete ensemble ideas
+    - full outfit suggestions
+    - how to coordinate clothes
+    - outfit matching tips
+    - how to create an outfit
+    - what to wear together
+    - outfit coordination help
+    - how to style clothes
+    - complete look suggestions
+    - outfit planning help
+    - how to match pieces
+    - outfit combination ideas
+    - how to put together clothes
+    - what matches with this
+    - how to coordinate an outfit
+    - complete outfit suggestions
+    - how to create a look
+    - outfit matching help
+
+- intent: ask_style_advice
+  examples: |
+    - give me style advice
+    - I need style tips
+    - how should I dress
+    - fashion advice please
+    - style guidance
+    - how to dress better
+    - fashion tips
+    - how to improve my style
+    - fashion guidance
+    - style consultation
+    - how to look fashionable
+    - fashion advice for my body type
+    - style tips for my age
+    - how to dress well
+    - style tips please
+    - fashion guidance needed
+    - how to look good
+    - style advice for me
+    - fashion tips for my body
+    - how to dress appropriately
+    - style help needed
+    - fashion advice for my age
+    - how to dress stylishly
+    - style tips for my body type
+    - fashion guidance for me
+    - how to dress for my shape
+    - style advice for my figure
+    - fashion tips for my style
+    - how to dress for my age
+    - style help for my body
+    - fashion advice for my look
+    - how to dress for my type
+    - style tips for my shape
+    - fashion guidance for my age
+
+- intent: ask_size_guide
+  examples: |
+    - size guide
+    - what size am I
+    - sizing help
+    - size chart
+    - how to measure
+    - size recommendations
+    - fit guide
+    - sizing guide
+    - size information
+    - how to find my size
+    - size chart for clothes
+    - measurement guide
+    - size help
+    - fit recommendations
+    - size advice
+    - I need help with sizing
+    - how do I know my size
+    - size chart help
+    - how to measure myself
+    - size recommendations needed
+    - fit guide help
+    - sizing assistance
+    - size information needed
+    - how to determine my size
+    - size chart for clothing
+    - measurement help
+    - size guidance needed
+    - fit recommendations help
+    - size advice needed
+    - I need sizing help
+    - how to find the right size
+    - size chart assistance
+    - how to take measurements
+    - size recommendations help
+    - fit guide assistance
+    - sizing help needed
+    - size information assistance
+
+- intent: ask_help
+  examples: |
+    - help
+    - I need help
+    - can you help me
+    - assistance
+    - what can you do
+    - how can you help
+    - help me
+    - I'm confused
+    - what are your features
+    - what do you do
+    - how do you work
+    - guide me
+    - support
+    - help please
+    - what can I ask you
+    - I need assistance
+    - can you assist me
+    - what are your capabilities
+    - how can you assist me
+    - help needed
+    - I'm lost
+    - what features do you have
+    - what do you offer
+    - how do you function
+    - guide me please
+    - support needed
+    - help me please
+    - what can you help with
+    - I need support
+    - can you support me
+    - what are your functions
+    - how can you support me
+    - assistance needed
+    - I'm confused about your features
+    - what can you do for me
+    - how do you help users
+
+- intent: specify_body_type
+  examples: |
+    - I have an [hourglass](body_type) body type
+    - I'm [petite](body_type)
+    - I'm [plus size](body_type)
+    - I have a [rectangular](body_type) body
+    - I'm [tall](body_type) and [slim](body_type)
+    - I have [curves](body_type)
+    - I'm [athletic](body_type) build
+    - I'm [apple](body_type) shaped
+    - I'm [pear](body_type) shaped
+    - I'm [inverted triangle](body_type) shaped
+    - I'm [diamond](body_type) shaped
+    - I'm [oval](body_type) shaped
+    - I'm [triangle](body_type) shaped
+    - I'm [rectangle](body_type) shaped
+    - I'm [hourglass](body_type) shaped
+    - I'm [petite](body_type) and [curvy](body_type)
+    - I'm [tall](body_type) and [curvy](body_type)
+    - I'm [short](body_type) and [slim](body_type)
+    - I'm [medium](body_type) height and [athletic](body_type)
+    - I'm [plus size](body_type) and [curvy](body_type)
+    - My body type is [hourglass](body_type)
+    - I have a [petite](body_type) frame
+    - I'm [plus size](body_type) build
+    - I have a [rectangular](body_type) figure
+    - I'm [tall](body_type) and [slim](body_type) build
+    - I have [curves](body_type) in my figure
+    - I'm [athletic](body_type) body type
+    - I'm [apple](body_type) body shape
+    - I'm [pear](body_type) body shape
+    - I'm [inverted triangle](body_type) body shape
+    - I'm [diamond](body_type) body shape
+    - I'm [oval](body_type) body shape
+    - I'm [triangle](body_type) body shape
+    - I'm [rectangle](body_type) body shape
+    - I'm [hourglass](body_type) body shape
+    - I'm [petite](body_type) and [curvy](body_type) build
+    - I'm [tall](body_type) and [curvy](body_type) figure
+    - I'm [short](body_type) and [slim](body_type) build
+    - I'm [medium](body_type) height and [athletic](body_type) build
+    - I'm [plus size](body_type) and [curvy](body_type) figure
+
+- intent: specify_age_group
+  examples: |
+    - I'm in my [teens](age_group)
+    - I'm in my [twenties](age_group)
+    - I'm in my [thirties](age_group)
+    - I'm in my [forties](age_group)
+    - I'm in my [fifties](age_group)
+    - I'm in my [sixties](age_group)
+    - I'm [young](age_group)
+    - I'm [middle aged](age_group)
+    - I'm [senior](age_group)
+    - I'm a [teenager](age_group)
+    - I'm a [young adult](age_group)
+    - I'm a [professional](age_group)
+    - I'm a [student](age_group)
+    - I'm a [parent](age_group)
+    - I'm a [grandparent](age_group)
+    - I'm in the [teens](age_group) age group
+    - I'm in the [twenties](age_group) age range
+    - I'm in the [thirties](age_group) age bracket
+    - I'm in the [forties](age_group) age group
+    - I'm in the [fifties](age_group) age range
+    - I'm in the [sixties](age_group) age bracket
+    - I'm a [young](age_group) person
+    - I'm a [middle aged](age_group) person
+    - I'm a [senior](age_group) person
+    - I'm a [teenager](age_group) age
+    - I'm a [young adult](age_group) age
+    - I'm a [professional](age_group) age
+    - I'm a [student](age_group) age
+    - I'm a [parent](age_group) age
+    - I'm a [grandparent](age_group) age
+    - My age group is [teens](age_group)
+    - My age range is [twenties](age_group)
+    - My age bracket is [thirties](age_group)
+    - My age group is [forties](age_group)
+    - My age range is [fifties](age_group)
+    - My age bracket is [sixties](age_group)
+    - I'm in the [young](age_group) category
+    - I'm in the [middle aged](age_group) category
+    - I'm in the [senior](age_group) category
+
+- intent: specify_weather
+  examples: |
+    - it's [sunny](weather) today
+    - it's [rainy](weather) outside
+    - it's [cold](weather) weather
+    - it's [hot](weather) today
+    - it's [warm](weather) outside
+    - it's [cloudy](weather) today
+    - it's [snowing](weather)
+    - it's [windy](weather) today
+    - it's [humid](weather) outside
+    - it's [dry](weather) weather
+    - it's [mild](weather) today
+    - it's [chilly](weather) outside
+    - it's [freezing](weather) today
+    - it's [scorching](weather) hot
+    - it's [pleasant](weather) weather
+    - The weather is [sunny](weather)
+    - It's [rainy](weather) weather
+    - The weather is [cold](weather)
+    - It's [hot](weather) weather
+    - The weather is [warm](weather)
+    - It's [cloudy](weather) weather
+    - The weather is [snowing](weather)
+    - It's [windy](weather) weather
+    - The weather is [humid](weather)
+    - It's [dry](weather) weather
+    - The weather is [mild](weather)
+    - It's [chilly](weather) weather
+    - The weather is [freezing](weather)
+    - It's [scorching](weather) weather
+    - The weather is [pleasant](weather)
+    - Today is [sunny](weather)
+    - Today is [rainy](weather)
+    - Today is [cold](weather)
+    - Today is [hot](weather)
+    - Today is [warm](weather)
+    - Today is [cloudy](weather)
+    - Today is [snowing](weather)
+    - Today is [windy](weather)
+    - Today is [humid](weather)
+    - Today is [dry](weather)
+    - Today is [mild](weather)
+    - Today is [chilly](weather)
+    - Today is [freezing](weather)
+    - Today is [scorching](weather)
+    - Today is [pleasant](weather)
+
+- intent: specify_event
+  examples: |
+    - I have a [wedding](event) to attend
+    - I'm going to a [job interview](event)
+    - I have a [date](event) tonight
+    - I'm attending a [business meeting](event)
+    - I have a [birthday party](event)
+    - I'm going to a [concert](event)
+    - I have a [graduation](event) ceremony
+    - I'm attending a [conference](event)
+    - I have a [dinner party](event)
+    - I'm going to a [cocktail party](event)
+    - I have a [family gathering](event)
+    - I'm attending a [formal dinner](event)
+    - I have a [presentation](event) to give
+    - I'm going to a [gala](event)
+    - I have a [reunion](event) to attend
+    - I'm attending a [wedding](event)
+    - I have a [job interview](event) coming up
+    - I'm going on a [date](event)
+    - I have a [business meeting](event) to attend
+    - I'm going to a [birthday party](event)
+    - I have a [concert](event) to go to
+    - I'm attending a [graduation](event)
+    - I have a [conference](event) to attend
+    - I'm going to a [dinner party](event)
+    - I have a [cocktail party](event) to attend
+    - I'm attending a [family gathering](event)
+    - I have a [formal dinner](event) to go to
+    - I'm giving a [presentation](event)
+    - I have a [gala](event) to attend
+    - I'm going to a [reunion](event)
+    - It's for a [wedding](event)
+    - It's for a [job interview](event)
+    - It's for a [date](event)
+    - It's for a [business meeting](event)
+    - It's for a [birthday party](event)
+    - It's for a [concert](event)
+    - It's for a [graduation](event)
+    - It's for a [conference](event)
+    - It's for a [dinner party](event)
+    - It's for a [cocktail party](event)
+    - It's for a [family gathering](event)
+    - It's for a [formal dinner](event)
+    - It's for a [presentation](event)
+    - It's for a [gala](event)
+    - It's for a [reunion](event)
+
+- intent: specify_preference
+  examples: |
+    - I prefer [comfortable](preference) clothes
+    - I like [stylish](preference) outfits
+    - I want [elegant](preference) clothing
+    - I prefer [casual](preference) wear
+    - I like [sophisticated](preference) style
+    - I want [trendy](preference) fashion
+    - I prefer [modest](preference) clothing
+    - I like [bold](preference) colors
+    - I want [neutral](preference) tones
+    - I prefer [loose](preference) fitting clothes
+    - I like [fitted](preference) clothing
+    - I want [oversized](preference) style
+    - I prefer [minimalist](preference) design
+    - I like [detailed](preference) clothing
+    - I want [simple](preference) style
+    - I'm looking for [comfortable](preference) clothing
+    - I need [stylish](preference) outfits
+    - I want [elegant](preference) fashion
+    - I prefer [casual](preference) style
+    - I like [sophisticated](preference) clothing
+    - I want [trendy](preference) style
+    - I prefer [modest](preference) fashion
+    - I like [bold](preference) style
+    - I want [neutral](preference) clothing
+    - I prefer [loose](preference) style
+    - I like [fitted](preference) fashion
+    - I want [oversized](preference) clothing
+    - I prefer [minimalist](preference) style
+    - I like [detailed](preference) fashion
+    - I want [simple](preference) clothing
+    - I'm after [comfortable](preference) clothes
+    - I'm seeking [stylish](preference) outfits
+    - I'm interested in [elegant](preference) clothing
+    - I'm looking for [casual](preference) wear
+    - I'm after [sophisticated](preference) style
+    - I'm seeking [trendy](preference) fashion
+    - I'm interested in [modest](preference) clothing
+    - I'm looking for [bold](preference) colors
+    - I'm after [neutral](preference) tones
+    - I'm seeking [loose](preference) fitting clothes
+    - I'm interested in [fitted](preference) clothing
+    - I'm looking for [oversized](preference) style
+    - I'm after [minimalist](preference) design
+    - I'm seeking [detailed](preference) clothing
+    - I'm interested in [simple](preference) style
+
+- intent: ask_personalized_advice
+  examples: |
+    - what looks good on my body type
+    - how should I dress for my age
+    - what colors suit me
+    - what style works for me
+    - how can I look younger
+    - how can I look more professional
+    - what should I wear to look confident
+    - how can I dress to impress
+    - what makes me look slimmer
+    - how can I highlight my best features
+    - what should I avoid wearing
+    - how can I create a signature style
+    - what accessories would suit me
+    - how can I build a capsule wardrobe
+    - what investment pieces should I buy
+    - what clothing suits my body type
+    - how should I dress for my age group
+    - what colors work for me
+    - what style is best for me
+    - how can I look more youthful
+    - how can I appear more professional
+    - what should I wear to feel confident
+    - how can I dress to make an impression
+    - what clothing makes me look thinner
+    - how can I emphasize my best features
+    - what clothing should I avoid
+    - how can I develop a signature style
+    - what accessories work for me
+    - how can I create a capsule wardrobe
+    - what investment pieces are worth buying
+    - what looks flattering on my figure
+    - how should I dress for my age range
+    - what colors are good for me
+    - what style suits me best
+    - how can I look more youthful
+    - how can I appear more professional
+    - what should I wear to feel confident
+    - how can I dress to impress others
+    - what clothing makes me look slimmer
+    - how can I highlight my best features
+    - what clothing should I avoid wearing
+    - how can I create a signature look
+    - what accessories suit me
+    - how can I build a versatile wardrobe
+    - what investment pieces should I consider
+
+- intent: ask_fashion_tips
+  examples: |
+    - how to mix and match clothes
+    - how to accessorize properly
+    - how to layer clothing
+    - how to dress for different occasions
+    - how to build a versatile wardrobe
+    - how to shop on a budget
+    - how to care for clothes
+    - how to organize a closet
+    - how to pack for travel
+    - how to dress for success
+    - how to create different looks
+    - how to follow trends
+    - how to develop personal style
+    - how to dress for comfort and style
+    - how to make clothes last longer
+    - fashion tips for mixing and matching
+    - how to accessorize correctly
+    - tips for layering clothing
+    - how to dress for various occasions
+    - tips for building a versatile wardrobe
+    - how to shop fashionably on a budget
+    - clothing care tips
+    - closet organization tips
+    - travel packing fashion tips
+    - tips for dressing for success
+    - how to create various looks
+    - tips for following fashion trends
+    - how to develop your personal style
+    - tips for dressing comfortably and stylishly
+    - how to extend the life of your clothes
+    - fashion advice for mixing clothes
+    - how to accessorize fashionably
+    - layering clothing tips
+    - how to dress appropriately for different events
+    - tips for creating a versatile wardrobe
+    - budget-friendly fashion shopping tips
+    - clothing maintenance tips
+    - wardrobe organization tips
+    - fashion packing tips for travel
+    - success dressing tips
+    - how to create multiple looks
+    - fashion trend following tips
+    - personal style development tips
+    - comfortable and stylish dressing tips
+    - clothing longevity tips
+
+- intent: ask_color_advice
+  examples: |
+    - what colors go well together
+    - what colors suit my skin tone
+    - how to match colors
+    - what colors are trending
+    - color combinations for outfits
+    - what colors work for my complexion
+    - how to coordinate colors
+    - what colors are in style
+    - color matching tips
+    - what colors flatter me
+    - how to choose colors
+    - what colors are popular
+    - color coordination advice
+    - what colors look good on me
+    - how to match outfit colors
+    - what colors are fashionable
+    - color pairing tips
+    - what colors complement each other
+    - how to wear colors
+    - what colors are trending now
+    - color advice for clothing
+    - what colors work together
+    - how to style with colors
+    - what colors are in fashion
+    - color matching advice
+    - what colors suit me best
+    - how to coordinate outfit colors
+    - what colors are stylish
+    - color combination tips
+    - what colors look good together
+    - how to choose outfit colors
+    - what colors are popular now
+    - color styling advice
+    - what colors work for my skin
+    - how to match clothing colors
+    - what colors are fashionable now
+    - color pairing advice
+    - what colors complement my skin
+    - how to wear different colors
+    - what colors are trending this season
+    - color advice for my wardrobe
+
+- intent: ask_occasion_specific
+  examples: |
+    - what to wear to a wedding
+    - what to wear to a job interview
+    - what to wear on a date
+    - what to wear to a party
+    - what to wear to work
+    - what to wear to a funeral
+    - what to wear to a graduation
+    - what to wear to a concert
+    - what to wear to a beach
+    - what to wear to a gym
+    - what to wear to a restaurant
+    - what to wear to a meeting
+    - what to wear to a presentation
+    - what to wear to a conference
+    - what to wear to a gala
+    - what to wear to a reunion
+    - what to wear to a birthday party
+    - what to wear to a dinner party
+    - what to wear to a cocktail party
+    - what to wear to a family gathering
+    - what to wear to a formal dinner
+    - what to wear to a casual event
+    - what to wear to a business event
+    - what to wear to a social event
+    - what to wear to a special occasion
+    - what to wear to an important event
+    - what to wear to a professional event
+    - what to wear to a celebration
+    - what to wear to a ceremony
+    - what to wear to a formal occasion
+    - what to wear to a casual occasion
+    - what to wear to a business occasion
+    - what to wear to a social occasion
+    - what to wear to a special event
+    - what to wear to an important occasion
+    - what to wear to a professional occasion
+    - what to wear to a celebration event
+    - what to wear to a ceremony event
+    - what to wear to a formal event
+    - what to wear to a casual event
+    - what to wear to a business event
+    - what to wear to a social event
+    - what to wear to a special event
+    - what to wear to an important event
+    - what to wear to a professional event
+    - what to wear to a celebration event
+    - what to wear to a ceremony event
+
+- intent: ask_seasonal_advice
+  examples: |
+    - what to wear in summer
+    - what to wear in winter
+    - what to wear in spring
+    - what to wear in fall
+    - summer fashion tips
+    - winter fashion tips
+    - spring fashion tips
+    - fall fashion tips
+    - seasonal clothing advice
+    - what's in season
+    - seasonal fashion trends
+    - what to wear this season
+    - seasonal style tips
+    - what's trending this season
+    - seasonal wardrobe advice
+    - what to wear for the weather
+    - seasonal fashion advice
+    - what's fashionable this season
+    - seasonal clothing tips
+    - what to wear in hot weather
+    - what to wear in cold weather
+    - what to wear in warm weather
+    - what to wear in cool weather
+    - hot weather fashion
+    - cold weather fashion
+    - warm weather fashion
+    - cool weather fashion
+    - weather appropriate clothing
+    - seasonal fashion trends
+    - what to wear in different seasons
+    - seasonal style advice
+    - what's in fashion this season
+    - seasonal wardrobe tips
+    - what to wear for the climate
+    - seasonal fashion tips
+    - what's stylish this season
+    - seasonal clothing advice
+    - what to wear in hot climate
+    - what to wear in cold climate
+    - what to wear in warm climate
+    - what to wear in cool climate
+    - hot climate fashion
+    - cold climate fashion
+    - warm climate fashion
+    - cool climate fashion
+    - climate appropriate clothing
+    - seasonal fashion trends
+    - what to wear in various seasons
+    - seasonal style tips
+    - what's fashionable this season
+    - seasonal wardrobe advice
+    - what to wear for the weather conditions
+    - seasonal fashion advice
+    - what's trendy this season
+
+- intent: ask_budget_advice
+  examples: |
+    - how to shop on a budget
+    - affordable fashion tips
+    - budget-friendly clothing
+    - how to save money on clothes
+    - cheap fashion options
+    - budget shopping tips
+    - affordable style advice
+    - how to look expensive on a budget
+    - budget fashion tips
+    - how to dress well cheaply
+    - affordable wardrobe tips
+    - budget-friendly shopping
+    - how to shop fashionably on a budget
+    - cheap but stylish clothing
+    - budget shopping advice
+    - affordable fashion advice
+    - how to look stylish on a budget
+    - budget fashion advice
+    - how to dress affordably
+    - affordable style tips
+    - budget-friendly fashion
+    - how to save on clothing
+    - cheap fashion advice
+    - budget shopping tips
+    - affordable fashion tips
+    - how to look expensive cheaply
+    - budget fashion advice
+    - how to dress well affordably
+    - affordable wardrobe advice
+    - budget-friendly shopping tips
+    - how to shop stylishly on a budget
+    - cheap but fashionable clothing
+    - budget shopping advice
+    - affordable fashion tips
+    - how to look trendy on a budget
+    - budget fashion tips
+    - how to dress affordably
+    - affordable style advice
+    - budget-friendly fashion tips
+    - how to save money on fashion
+    - cheap fashion tips
+    - budget shopping advice
+    - affordable fashion advice
+    - how to look expensive on a budget
+    - budget fashion advice
+    - how to dress well cheaply
+    - affordable wardrobe tips
+    - budget-friendly shopping advice
+    - how to shop fashionably on a budget
+    - cheap but stylish clothing
+    - budget shopping tips
+    - affordable fashion advice
+    - how to look stylish on a budget
+
+- intent: ask_accessory_advice
+  examples: |
+    - how to accessorize
+    - what accessories to wear
+    - accessory tips
+    - how to choose accessories
+    - what jewelry to wear
+    - how to style accessories
+    - accessory advice
+    - what accessories match
+    - how to wear accessories
+    - accessory styling tips
+    - what accessories work together
+    - how to coordinate accessories
+    - accessory matching advice
+    - what accessories to choose
+    - how to style with accessories
+    - accessory coordination tips
+    - what accessories complement
+    - how to wear jewelry
+    - jewelry styling tips
+    - what jewelry matches
+    - how to choose jewelry
+    - jewelry advice
+    - what jewelry works together
+    - how to coordinate jewelry
+    - jewelry matching advice
+    - what jewelry to choose
+    - how to style with jewelry
+    - jewelry coordination tips
+    - what jewelry complements
+    - how to wear bags
+    - bag styling tips
+    - what bags match
+    - how to choose bags
+    - bag advice
+    - what bags work together
+    - how to coordinate bags
+    - bag matching advice
+    - what bags to choose
+    - how to style with bags
+    - bag coordination tips
+    - what bags complement
+    - how to wear scarves
+    - scarf styling tips
+    - what scarves match
+    - how to choose scarves
+    - scarf advice
+    - what scarves work together
+    - how to coordinate scarves
+    - scarf matching advice
+    - what scarves to choose
+    - how to style with scarves
+    - scarf coordination tips
+    - what scarves complement
+
+- intent: ask_fit_advice
+  examples: |
+    - how should clothes fit
+    - what size should I wear
+    - how to know if clothes fit
+    - fit advice for clothing
+    - how to check if clothes fit
+    - what fit is best for me
+    - how to determine proper fit
+    - fit tips for clothing
+    - how to assess clothing fit
+    - what fit works for my body
+    - how to measure for fit
+    - fit advice for my body type
+    - how to choose the right fit
+    - what fit is flattering
+    - how to find the right fit
+    - fit tips for my figure
+    - how to check clothing fit
+    - what fit suits me best
+    - how to determine clothing fit
+    - fit advice for my shape
+    - how to assess if clothes fit
+    - what fit is appropriate
+    - how to choose proper fit
+    - fit tips for my body
+    - how to find proper fit
+    - what fit works best
+    - how to check proper fit
+    - fit advice for my figure
+    - how to determine best fit
+    - what fit is right for me
+    - how to choose flattering fit
+    - fit tips for my shape
+    - how to find flattering fit
+    - what fit suits my body
+    - how to check if fit is right
+    - fit advice for my type
+    - how to determine flattering fit
+    - what fit works for my shape
+    - how to choose right fit
+    - fit tips for my figure
+    - how to find right fit
+    - what fit is best for my body
+    - how to check flattering fit
+    - fit advice for my shape
+    - how to determine right fit
+    - what fit suits my figure
+    - how to choose best fit
+    - fit tips for my type
+    - how to find best fit
+    - what fit works for my figure
+    - how to check right fit
+    - fit advice for my body
+
+- intent: nlu_fallback
+  examples: |
+    - asdfasfasdf
+    - asdfasdfasdf
+    - asdfasdf
+    - asdf
+    - asdfasdfasdfasdf
+    - asdfasdfasdfasdfasdf
+    - asdfasdfasdfasdfasdfasdfasdf
+    - asdfasdfasdfasdfasdfasdfasdfasdf
+    - asdfasdfasdfasdfasdfasdfasdfasdfasdf
+    - qwerty
+    - zxcvbnm
+    - 123456789
+    - !@#$%^&*()
+    - random text
+    - gibberish
+    - nonsense
+    - meaningless text
+    - random words
+    - jumbled letters
+    - keyboard smash
+    - random characters
+    - test text
+    - sample text
+    - placeholder text
+    - dummy text
+    - random string
+    - meaningless string
+    - test input
+    - sample input
+    - placeholder input

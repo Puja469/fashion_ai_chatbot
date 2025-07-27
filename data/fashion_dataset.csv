@@ -1,0 +1,72 @@
+category,item_name,style,color,season,price_range,occasion,trend_status,description,2025_trend_notes,outfit_combinations,image_url
+tops,crop_top,streetwear,black,all,medium,party,trending,Short fitted top showing midriff,Micro-cropped styles with cutouts,"high_waisted_jeans,oversized_blazer,"hourglass
+tops,oversized_blazer,business,beige,fall,high,work,trending,Relaxed fit blazer with shoulder pads,Power dressing with comfort,"turtleneck,wide_leg_pants,"all"
+tops,halter_neck,party,red,summer,medium,party,trending,Backless top with neck strap,Retro 90s revival,"high_waisted_jeans,strappy_sandals,"hourglass
+tops,turtleneck,minimalist,white,winter,medium,work,classic,High neck fitted sweater,Timeless elegance,"wide_leg_pants,ankle_boots,"all"
+tops,graphic_tee,streetwear,black,all,low,casual,trending,Printed t-shirt with bold designs,Sustainable materials focus,"baggy_jeans,chunky_sneakers,"all"
+tops,peplum_top,formal,blue,spring,medium,work,trending,Flared waist detail top,Feminine power dressing,"pencil_skirt,ballet_flats,"hourglass
+tops,mesh_top,party,black,summer,medium,party,trending,Sheer fabric with lining,Edgy sophistication,"leather_pants,platform_sandals,"hourglass
+tops,chunky_knit,bohemian,brown,winter,medium,casual,trending,Thick wool sweater,Cozy maximalism,"wide_leg_pants,ankle_boots,"all"
+tops,silk_blouse,business,white,all,high,work,classic,Premium silk button-down,Investment piece,"wide_leg_pants,loafers,"all"
+tops,off_shoulder,party,pink,summer,medium,party,trending,Romantic shoulder-baring top,Soft femininity,"midi_skirt,strappy_sandals,"hourglass
+tops,denim_shirt,streetwear,blue,all,medium,casual,trending,Classic denim button-down,Versatile layering,"baggy_jeans,chunky_sneakers,"all"
+tops,wrap_top,formal,green,spring,medium,work,trending,Cross-over front blouse,Flattering silhouette,"pencil_skirt,ballet_flats,"hourglass
+bottoms,wide_leg_pants,business,black,all,high,work,trending,Flowy high-waisted pants,Comfort meets elegance,"silk_blouse,ankle_boots,"all"
+bottoms,leather_pants,streetwear,black,fall,high,party,trending,Faux leather fitted pants,Sustainable leather alternatives,"crop_top,chunky_sneakers,"hourglass
+bottoms,pleated_skirt,formal,beige,spring,medium,work,trending,Accordion pleat midi skirt,Preppy revival,"silk_blouse,ballet_flats,"hourglass
+bottoms,baggy_jeans,streetwear,blue,all,medium,casual,trending,Oversized denim pants,Y2K nostalgia,"crop_top,chunky_sneakers,"all"
+bottoms,cycling_shorts,streetwear,black,summer,low,gym,trending,Compression athletic shorts,Athleisure evolution,"oversized_hoodie,chunky_sneakers,"all"
+bottoms,paper_bag_waist,minimalist,white,spring,medium,casual,trending,High-waisted with drawstring,Effortless chic,"turtleneck,ballet_flats,"all"
+bottoms,slip_skirt,party,black,all,medium,party,trending,Satin bias-cut skirt,Sensual minimalism,"silk_blouse,strappy_sandals,"hourglass
+bottoms,cargo_pants,streetwear,olive,all,medium,casual,trending,Utility pants with pockets,Functional fashion,"crop_top,chunky_sneakers,"all"
+bottoms,pencil_skirt,business,black,all,medium,work,classic,Classic fitted skirt,Office essential,"silk_blouse,ballet_flats,"hourglass
+bottoms,high_waisted_jeans,streetwear,blue,all,medium,casual,trending,Classic high-rise denim,Timeless style,"crop_top,chunky_sneakers,"all"
+bottoms,midi_skirt,formal,blue,spring,medium,work,trending,Knee-length A-line skirt,Versatile office wear,"silk_blouse,ballet_flats,"all"
+bottoms,culottes,business,beige,all,medium,work,trending,Wide-leg cropped pants,Comfortable elegance,"silk_blouse,loafers,"all"
+dresses,midi_dress,formal,blue,spring,high,work,trending,Knee-length fitted dress,Office to evening versatility,"ankle_boots,oversized_bag,"all"
+dresses,slip_dress,party,black,all,medium,party,trending,Bias-cut satin dress,90s minimalism,"strappy_sandals,chain_necklace,"hourglass
+dresses,shirt_dress,business,white,all,medium,work,trending,Button-down dress style,Professional polish,"ankle_boots,oversized_bag,"all"
+dresses,cutout_dress,party,red,summer,high,party,trending,Strategic cutout details,Sexy sophistication,"strappy_sandals,chain_necklace,"hourglass
+dresses,wrap_dress,formal,green,spring,medium,date,classic,Cross-over front dress,Flattering silhouette,"ballet_flats,oversized_bag,"hourglass
+dresses,mini_dress,party,pink,summer,medium,party,trending,Short fitted dress,Youthful energy,"strappy_sandals,chain_necklace,"hourglass
+dresses,maxi_dress,bohemian,floral,summer,medium,casual,trending,Long flowy dress,Boho chic,"strappy_sandals,stacked_rings,"all"
+dresses,bodycon_dress,party,black,all,medium,party,trending,Tight fitted dress,Confidence booster,"strappy_sandals,chain_necklace,"hourglass
+dresses,tea_dress,vintage,blue,spring,medium,date,trending,Retro-inspired dress,Nostalgic charm,"ballet_flats,oversized_bag,"all"
+dresses,shift_dress,business,black,all,medium,work,classic,Classic fitted dress,Office staple,"ankle_boots,oversized_bag,"all"
+dresses,smock_dress,bohemian,floral,spring,medium,casual,trending,Relaxed fit dress,Effortless style,"ballet_flats,oversized_bag,"all"
+dresses,bandage_dress,party,red,all,high,party,trending,Structured fitted dress,Red carpet ready,"strappy_sandals,chain_necklace,"hourglass
+outerwear,oversized_coat,business,beige,winter,high,work,trending,Long structured coat,Investment piece,"turtleneck,wide_leg_pants,"all"
+outerwear,leather_jacket,streetwear,black,fall,high,party,classic,Biker style jacket,Timeless edge,"crop_top,baggy_jeans,"all"
+outerwear,blazer,formal,black,all,high,work,classic,Structured jacket,Power dressing essential,"silk_blouse,pencil_skirt,"all"
+outerwear,denim_jacket,streetwear,blue,all,medium,casual,classic,Classic denim style,Versatile layering,"crop_top,baggy_jeans,"all"
+outerwear,puffer_jacket,streetwear,black,winter,medium,casual,trending,Quilted insulated jacket,Functional fashion,"turtleneck,baggy_jeans,"all"
+outerwear,trench_coat,formal,beige,fall,high,work,classic,Classic rain coat,Heritage style,"silk_blouse,wide_leg_pants,"all"
+outerwear,cardigan,minimalist,white,all,medium,casual,trending,Button-up sweater,Cozy layering,"turtleneck,wide_leg_pants,"all"
+outerwear,windbreaker,streetwear,neon,spring,low,casual,trending,Lightweight rain jacket,Retro sportswear,"crop_top,baggy_jeans,"all"
+outerwear,oversized_hoodie,streetwear,black,all,medium,casual,trending,Relaxed fit hoodie,Comfortable style,"cycling_shorts,chunky_sneakers,"all"
+outerwear,wool_coat,business,black,winter,high,work,classic,Classic winter coat,Investment piece,"turtleneck,wide_leg_pants,"all"
+outerwear,bomber_jacket,streetwear,olive,fall,medium,casual,trending,Classic bomber style,Urban cool,"crop_top,baggy_jeans,"all"
+shoes,chunky_sneakers,streetwear,white,all,medium,casual,trending,Thick sole athletic shoes,Comfort meets style,"crop_top,baggy_jeans,"all"
+shoes,ankle_boots,formal,black,fall,high,work,classic,Short leather boots,Seasonal staple,"turtleneck,wide_leg_pants,"all"
+shoes,strappy_sandals,party,black,summer,medium,party,trending,Thin strap heels,Sexy minimalism,"slip_dress,chain_necklace,"all"
+shoes,loafers,business,brown,all,high,work,trending,Slip-on leather shoes,Preppy sophistication,"silk_blouse,wide_leg_pants,"all"
+shoes,platform_sandals,party,white,summer,medium,party,trending,Thick sole sandals,90s revival,"mini_dress,chain_necklace,"all"
+shoes,ballet_flats,minimalist,black,all,medium,casual,classic,Round toe flat shoes,Timeless comfort,"turtleneck,wide_leg_pants,"all"
+shoes,combat_boots,streetwear,black,fall,medium,casual,trending,Heavy duty boots,Edgy utility,"crop_top,baggy_jeans,"all"
+shoes,mules,formal,beige,all,high,work,trending,Backless slip-on shoes,Effortless elegance,"silk_blouse,wide_leg_pants,"all"
+shoes,mary_janes,party,black,all,medium,party,trending,Classic strap shoes,Retro charm,"mini_dress,chain_necklace,"all"
+shoes,oxford_shoes,business,black,all,high,work,classic,Classic lace-up shoes,Professional polish,"silk_blouse,pencil_skirt,"all"
+shoes,espadrilles,casual,white,summer,low,casual,trending,Canvas wedge shoes,Summer essential,"maxi_dress,stacked_rings,"all"
+accessories,oversized_bag,minimalist,black,all,high,work,trending,Large structured handbag,Functional luxury,"silk_blouse,wide_leg_pants,"all"
+accessories,chain_necklace,streetwear,gold,all,medium,party,trending,Thick link necklace,Statement jewelry,"crop_top,baggy_jeans,"all"
+accessories,scarf,formal,red,winter,low,casual,classic,Silk or wool scarf,Seasonal accessory,"turtleneck,wide_leg_pants,"all"
+accessories,hoop_earrings,party,gold,all,medium,party,trending,Large circular earrings,Retro glamour,"slip_dress,strappy_sandals,"all"
+accessories,belt_bag,streetwear,black,all,low,casual,trending,Cross-body fanny pack,Hands-free convenience,"crop_top,baggy_jeans,"all"
+accessories,wide_belt,business,black,all,medium,work,trending,Thick leather belt,Waist definition,"silk_blouse,pencil_skirt,"all"
+accessories,stacked_rings,party,silver,all,medium,party,trending,Multiple thin rings,Minimalist jewelry,"slip_dress,strappy_sandals,"all"
+accessories,headband,minimalist,black,all,low,casual,trending,Thin fabric headband,Effortless styling,"turtleneck,wide_leg_pants,"all"
+accessories,statement_earrings,party,gold,all,high,party,trending,Bold geometric earrings,Red carpet glamour,"slip_dress,strappy_sandals,"all"
+accessories,leather_gloves,formal,black,winter,medium,work,classic,Classic leather gloves,Winter elegance,"turtleneck,wide_leg_pants,"all"
+accessories,sunglasses,streetwear,black,all,medium,casual,trending,Oversized frame sunglasses,Statement accessory,"crop_top,baggy_jeans,"all"
+accessories,watch,formal,silver,all,high,work,classic,Classic timepiece,Investment accessory,"silk_blouse,wide_leg_pants,"all"
+accessories,bandana,streetwear,red,all,low,casual,trending,Classic cotton bandana,Retro accessory,"crop_top,baggy_jeans,"all"

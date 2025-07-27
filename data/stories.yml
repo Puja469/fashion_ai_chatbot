@@ -1,0 +1,402 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help request
+  steps:
+  - intent: ask_help
+  - action: utter_help
+
+- story: direct recommendation request
+  steps:
+  - intent: ask_recommendation
+  - action: action_give_recommendation
+
+- story: direct category request
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+
+- story: direct category request without context
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+
+- story: category with color request
+  steps:
+  - intent: specify_category
+  - action: action_listen
+
+- story: complete recommendation flow
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: utter_ask_budget
+  - intent: specify_budget
+  - action: utter_ask_season
+  - intent: specify_season
+  - action: action_give_recommendation
+
+- story: quick recommendation with minimal info
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: action_give_recommendation
+
+- story: recommendation with color preference
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: action_give_recommendation
+
+- story: recommendation with occasion focus
+  steps:
+  - intent: specify_category
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: action_give_recommendation
+
+- story: recommendation with style preference
+  steps:
+  - intent: specify_category
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: action_give_recommendation
+
+- story: recommendation with budget focus
+  steps:
+  - intent: specify_category
+  - action: utter_ask_budget
+  - intent: specify_budget
+  - action: action_give_recommendation
+
+- story: recommendation with season focus
+  steps:
+  - intent: specify_category
+  - action: utter_ask_season
+  - intent: specify_season
+  - action: action_give_recommendation
+
+- story: recommendation with budget
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: utter_ask_budget
+  - intent: specify_budget
+  - action: action_give_recommendation
+
+- story: recommendation with season
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: utter_ask_season
+  - intent: specify_season
+  - action: action_give_recommendation
+
+- story: recommendation with style preference
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: action_give_recommendation
+
+- story: recommendation with color preference
+  steps:
+  - intent: specify_category
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: utter_ask_color
+  - intent: specify_color
+  - action: action_give_recommendation
+
+- story: trending request
+  steps:
+  - intent: ask_trending
+  - action: action_trending_items
+
+- story: outfit combination request
+  steps:
+  - intent: ask_outfit_combination
+  - action: action_outfit_combination
+
+- story: style advice request
+  steps:
+  - intent: ask_style_advice
+  - action: utter_ask_style
+  - intent: specify_style
+  - action: action_style_advice
+
+- story: style advice without style preference
+  steps:
+  - intent: ask_style_advice
+  - action: action_style_advice
+
+- story: size guide request
+  steps:
+  - intent: ask_size_guide
+  - action: utter_ask_gender
+  - intent: specify_gender
+  - action: action_size_guide
+
+- story: size guide without gender
+  steps:
+  - intent: ask_size_guide
+  - action: action_size_guide
+
+- story: styling advice with context
+  steps:
+  - intent: specify_category
+  - action: action_listen
+
+- story: personalized body type advice
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_body_type
+  - intent: specify_body_type
+  - action: action_style_advice
+
+- story: age-based fashion advice
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_age_group
+  - intent: specify_age_group
+  - action: action_style_advice
+
+- story: weather-based recommendations
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_weather
+  - intent: specify_weather
+  - action: action_give_recommendation
+
+- story: event-specific outfit
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_event
+  - intent: specify_event
+  - action: action_give_recommendation
+
+- story: preference-based styling
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_preference
+  - intent: specify_preference
+  - action: action_style_advice
+
+- story: fashion tips request
+  steps:
+  - intent: ask_fashion_tips
+  - action: action_style_advice
+
+- story: complete personalized flow
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_body_type
+  - intent: specify_body_type
+  - action: utter_ask_age_group
+  - intent: specify_age_group
+  - action: utter_ask_occasion
+  - intent: specify_occasion
+  - action: utter_ask_weather
+  - intent: specify_weather
+  - action: utter_ask_preference
+  - intent: specify_preference
+  - action: action_give_recommendation
+
+- story: personalized advice with body type
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_body_type
+  - intent: specify_body_type
+  - action: action_style_advice
+
+- story: personalized advice with age group
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_age_group
+  - intent: specify_age_group
+  - action: action_style_advice
+
+- story: personalized advice with preference
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_preference
+  - intent: specify_preference
+  - action: action_style_advice
+
+- story: weather-based recommendations
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_weather
+  - intent: specify_weather
+  - action: action_give_recommendation
+
+- story: event-specific outfit
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_event
+  - intent: specify_event
+  - action: action_give_recommendation
+
+- story: preference-based styling
+  steps:
+  - intent: ask_personalized_advice
+  - action: utter_ask_preference
+  - intent: specify_preference
+  - action: action_style_advice
+
+- story: fashion tips request
+  steps:
+  - intent: ask_fashion_tips
+  - action: action_style_advice
+
+- story: trending request
+  steps:
+  - intent: ask_trending
+  - action: action_trending_items
+
+- story: outfit combination request
+  steps:
+  - intent: ask_outfit_combination
+  - action: action_outfit_combination
+
+- story: style advice request
+  steps:
+  - intent: ask_style_advice
+  - action: action_style_advice
+
+- story: size guide request
+  steps:
+  - intent: ask_size_guide
+  - action: action_size_guide
+
+- story: help request
+  steps:
+  - intent: ask_help
+  - action: utter_help
+
+- story: direct category request
+  steps:
+  - intent: specify_category
+  - action: action_give_recommendation
+
+- story: direct recommendation request
+  steps:
+  - intent: ask_recommendation
+  - action: action_give_recommendation
+
+- story: quick personalized recommendation
+  steps:
+  - intent: ask_recommendation
+  - action: utter_ask_body_type
+  - intent: specify_body_type
+  - action: action_give_recommendation
+
+- story: style consultation
+  steps:
+  - intent: ask_style_advice
+  - action: utter_ask_body_type
+  - intent: specify_body_type
+  - action: utter_ask_age_group
+  - intent: specify_age_group
+  - action: action_style_advice
+
+- story: color advice request
+  steps:
+  - intent: ask_color_advice
+  - action: utter_color_advice
+
+- story: occasion specific advice
+  steps:
+  - intent: ask_occasion_specific
+  - action: utter_occasion_specific
+
+- story: seasonal advice request
+  steps:
+  - intent: ask_seasonal_advice
+  - action: utter_seasonal_advice
+
+- story: budget advice request
+  steps:
+  - intent: ask_budget_advice
+  - action: utter_budget_advice
+
+- story: accessory advice request
+  steps:
+  - intent: ask_accessory_advice
+  - action: utter_accessory_advice
+
+- story: fit advice request
+  steps:
+  - intent: ask_fit_advice
+  - action: utter_fit_advice
+
+- story: color coordination help
+  steps:
+  - intent: ask_color_advice
+  - action: utter_color_advice
+
+- story: what to wear for specific occasion
+  steps:
+  - intent: ask_occasion_specific
+  - action: utter_occasion_specific
+
+- story: seasonal fashion guidance
+  steps:
+  - intent: ask_seasonal_advice
+  - action: utter_seasonal_advice
+
+- story: budget-friendly shopping tips
+  steps:
+  - intent: ask_budget_advice
+  - action: utter_budget_advice
+
+- story: accessory styling help
+  steps:
+  - intent: ask_accessory_advice
+  - action: utter_accessory_advice
+
+- story: clothing fit guidance
+  steps:
+  - intent: ask_fit_advice
+  - action: utter_fit_advice

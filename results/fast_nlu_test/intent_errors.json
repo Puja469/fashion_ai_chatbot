@@ -1,0 +1,1010 @@
+[
+  {
+    "text": "what's fashionable",
+    "intent": "ask_trending",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9396517872810364
+    }
+  },
+  {
+    "text": "how much does it cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.6270326972007751
+    }
+  },
+  {
+    "text": "what's the price",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.6603783369064331
+    }
+  },
+  {
+    "text": "how much is it",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.3232857584953308
+    }
+  },
+  {
+    "text": "what's the cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.9213895797729492
+    }
+  },
+  {
+    "text": "how much do they cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5444799065589905
+    }
+  },
+  {
+    "text": "what are the prices",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.707198441028595
+    }
+  },
+  {
+    "text": "how much are they",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7722592949867249
+    }
+  },
+  {
+    "text": "what's the price range",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.6399285197257996
+    }
+  },
+  {
+    "text": "how much should I expect to pay",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.8872545957565308
+    }
+  },
+  {
+    "text": "what's the cost range",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.9388024210929871
+    }
+  },
+  {
+    "text": "how much do clothes cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.636811375617981
+    }
+  },
+  {
+    "text": "what's the price of clothes",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.5957452058792114
+    }
+  },
+  {
+    "text": "how much are clothes",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.6904447078704834
+    }
+  },
+  {
+    "text": "what's the cost of clothes",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.739268958568573
+    }
+  },
+  {
+    "text": "how much do fashion items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.43438902497291565
+    }
+  },
+  {
+    "text": "what's the price of fashion items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.8109757304191589
+    }
+  },
+  {
+    "text": "how much are fashion items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.31966742873191833
+    }
+  },
+  {
+    "text": "what's the cost of fashion items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.8795323967933655
+    }
+  },
+  {
+    "text": "how much do style items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.7035636305809021
+    }
+  },
+  {
+    "text": "what's the price of style items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.7572776079177856
+    }
+  },
+  {
+    "text": "how much are style items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.6330853700637817
+    }
+  },
+  {
+    "text": "what's the cost of style items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.8507607579231262
+    }
+  },
+  {
+    "text": "how much do outfit items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.25484898686408997
+    }
+  },
+  {
+    "text": "what's the price of outfit items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.6927434802055359
+    }
+  },
+  {
+    "text": "how much are outfit items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.19584809243679047
+    }
+  },
+  {
+    "text": "what's the cost of outfit items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.7162349224090576
+    }
+  },
+  {
+    "text": "how much do apparel items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.1976466178894043
+    }
+  },
+  {
+    "text": "what's the price of apparel items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.649905800819397
+    }
+  },
+  {
+    "text": "how much are apparel items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.26526856422424316
+    }
+  },
+  {
+    "text": "what's the cost of apparel items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.7445276379585266
+    }
+  },
+  {
+    "text": "how much do garment items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.1666988581418991
+    }
+  },
+  {
+    "text": "what's the price of garment items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.6655928492546082
+    }
+  },
+  {
+    "text": "how much are garment items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.3274901509284973
+    }
+  },
+  {
+    "text": "what's the cost of garment items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.735946536064148
+    }
+  },
+  {
+    "text": "how much do attire items cost",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.3028132915496826
+    }
+  },
+  {
+    "text": "what's the price of attire items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.782238245010376
+    }
+  },
+  {
+    "text": "how much are attire items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.23462891578674316
+    }
+  },
+  {
+    "text": "what's the cost of attire items",
+    "intent": "ask_price",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.8427415490150452
+    }
+  },
+  {
+    "text": "how do I care for this",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7970023155212402
+    }
+  },
+  {
+    "text": "care instructions",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.3293211758136749
+    }
+  },
+  {
+    "text": "how to take care of",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.956683337688446
+    }
+  },
+  {
+    "text": "washing instructions",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.3608432412147522
+    }
+  },
+  {
+    "text": "how to wash",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9916262626647949
+    }
+  },
+  {
+    "text": "care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_size_guide",
+      "confidence": 0.5990318059921265
+    }
+  },
+  {
+    "text": "maintenance guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_size_guide",
+      "confidence": 0.5852697491645813
+    }
+  },
+  {
+    "text": "how to maintain",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9182475209236145
+    }
+  },
+  {
+    "text": "care tips",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9999150037765503
+    }
+  },
+  {
+    "text": "maintenance tips",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9998939037322998
+    }
+  },
+  {
+    "text": "washing guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_size_guide",
+      "confidence": 0.36579829454421997
+    }
+  },
+  {
+    "text": "care instructions help",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.6471496224403381
+    }
+  },
+  {
+    "text": "how to care for clothes",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.934654176235199
+    }
+  },
+  {
+    "text": "clothing care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.6850332021713257
+    }
+  },
+  {
+    "text": "fashion care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.12529772520065308
+    }
+  },
+  {
+    "text": "style care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.8432319164276123
+    }
+  },
+  {
+    "text": "outfit care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "specify_occasion",
+      "confidence": 0.5410199761390686
+    }
+  },
+  {
+    "text": "apparel care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.9585897326469421
+    }
+  },
+  {
+    "text": "garment care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.9693241715431213
+    }
+  },
+  {
+    "text": "attire care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.6152907013893127
+    }
+  },
+  {
+    "text": "wear care",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.6204725503921509
+    }
+  },
+  {
+    "text": "clothing maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.5961445569992065
+    }
+  },
+  {
+    "text": "fashion maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.28117072582244873
+    }
+  },
+  {
+    "text": "style maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.9129146933555603
+    }
+  },
+  {
+    "text": "outfit maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "specify_occasion",
+      "confidence": 0.7620553970336914
+    }
+  },
+  {
+    "text": "apparel maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.5602929592132568
+    }
+  },
+  {
+    "text": "garment maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.626225471496582
+    }
+  },
+  {
+    "text": "attire maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.28475096821784973
+    }
+  },
+  {
+    "text": "wear maintenance",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "specify_occasion",
+      "confidence": 0.3020344078540802
+    }
+  },
+  {
+    "text": "clothing care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.21746692061424255
+    }
+  },
+  {
+    "text": "fashion care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_size_guide",
+      "confidence": 0.3064326047897339
+    }
+  },
+  {
+    "text": "style care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.8638511300086975
+    }
+  },
+  {
+    "text": "outfit care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_outfit_combination",
+      "confidence": 0.3773399889469147
+    }
+  },
+  {
+    "text": "apparel care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.7328827381134033
+    }
+  },
+  {
+    "text": "garment care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.8105465173721313
+    }
+  },
+  {
+    "text": "attire care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.26745185256004333
+    }
+  },
+  {
+    "text": "wear care guide",
+    "intent": "ask_care",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.256473183631897
+    }
+  },
+  {
+    "text": "I don't understand",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9543017148971558
+    }
+  },
+  {
+    "text": "what do you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9764758348464966
+    }
+  },
+  {
+    "text": "can you explain",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8188129663467407
+    }
+  },
+  {
+    "text": "I'm confused",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9965662360191345
+    }
+  },
+  {
+    "text": "that doesn't make sense",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9894146919250488
+    }
+  },
+  {
+    "text": "I don't get it",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9792521595954895
+    }
+  },
+  {
+    "text": "can you clarify",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.5267838835716248
+    }
+  },
+  {
+    "text": "what are you talking about",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9125490188598633
+    }
+  },
+  {
+    "text": "I'm not sure what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6737488508224487
+    }
+  },
+  {
+    "text": "can you rephrase that",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7842537760734558
+    }
+  },
+  {
+    "text": "I don't follow",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.988842248916626
+    }
+  },
+  {
+    "text": "what does that mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_category",
+      "confidence": 0.7670877575874329
+    }
+  },
+  {
+    "text": "can you help me understand",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9699936509132385
+    }
+  },
+  {
+    "text": "I'm lost",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_gender",
+      "confidence": 0.2554088532924652
+    }
+  },
+  {
+    "text": "what are you saying",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.4069758653640747
+    }
+  },
+  {
+    "text": "can you explain better",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_style_advice",
+      "confidence": 0.2793944180011749
+    }
+  },
+  {
+    "text": "I don't know what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5043613910675049
+    }
+  },
+  {
+    "text": "can you say that differently",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.3267834782600403
+    }
+  },
+  {
+    "text": "I'm not following",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8100231885910034
+    }
+  },
+  {
+    "text": "what are you trying to say",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.6281679272651672
+    }
+  },
+  {
+    "text": "can you make that clearer",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.3069538176059723
+    }
+  },
+  {
+    "text": "I don't understand what you're saying",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6844685077667236
+    }
+  },
+  {
+    "text": "can you explain in simpler terms",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_trending",
+      "confidence": 0.478794127702713
+    }
+  },
+  {
+    "text": "I'm confused about what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9878664016723633
+    }
+  },
+  {
+    "text": "can you break that down",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8046982288360596
+    }
+  },
+  {
+    "text": "what do you mean by that",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7449935078620911
+    }
+  },
+  {
+    "text": "can you elaborate",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.5556508302688599
+    }
+  },
+  {
+    "text": "I need clarification",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.9769599437713623
+    }
+  },
+  {
+    "text": "can you clarify what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.781786322593689
+    }
+  },
+  {
+    "text": "I'm not sure I understand",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6624432802200317
+    }
+  },
+  {
+    "text": "can you explain what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9615660309791565
+    }
+  },
+  {
+    "text": "what are you referring to",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.3667019009590149
+    }
+  },
+  {
+    "text": "can you give me more details",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_style",
+      "confidence": 0.32385677099227905
+    }
+  },
+  {
+    "text": "I need more information",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.7525925040245056
+    }
+  },
+  {
+    "text": "can you provide more context",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2941761910915375
+    }
+  },
+  {
+    "text": "what context are you referring to",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.35654041171073914
+    }
+  },
+  {
+    "text": "can you give me an example",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.4002106487751007
+    }
+  },
+  {
+    "text": "I need an example",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "specify_color",
+      "confidence": 0.322212815284729
+    }
+  },
+  {
+    "text": "can you show me what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9316547513008118
+    }
+  },
+  {
+    "text": "what example can you give",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8507006764411926
+    }
+  },
+  {
+    "text": "can you demonstrate what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.914068341255188
+    }
+  },
+  {
+    "text": "I need a demonstration",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.8622422218322754
+    }
+  },
+  {
+    "text": "can you illustrate what you mean",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9259793162345886
+    }
+  },
+  {
+    "text": "what illustration can you provide",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8267280459403992
+    }
+  },
+  {
+    "text": "can you show me an example",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.3788602352142334
+    }
+  },
+  {
+    "text": "I need to see an example",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_recommendation",
+      "confidence": 0.5007233619689941
+    }
+  },
+  {
+    "text": "can you give me a sample",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_outfit_combination",
+      "confidence": 0.5626644492149353
+    }
+  },
+  {
+    "text": "what sample can you provide",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8399698138237
+    }
+  },
+  {
+    "text": "can you show me a sample",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.5108714699745178
+    }
+  },
+  {
+    "text": "I need to see a sample",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_outfit_combination",
+      "confidence": 0.483093798160553
+    }
+  }
+]

@@ -1,0 +1,355 @@
+intent,user_message,bot_response,context,product_recommendations,styling_tips,image_urls,confidence_score
+greet,hello,Hi there! 👋 I'm your personal fashion assistant, ready to help you discover your perfect style! What can I help you with today?,casual conversation,,,0.95
+greet,hi,Hey fashion lover! ✨ I'm here to help you look and feel amazing. What's on your mind today?,casual conversation,,,0.95
+greet,good morning,Good morning! 🌅 Ready to start your day with some fabulous fashion inspiration? What would you like to explore today?,casual conversation,,,0.95
+greet,hey there,Hey there! 👋 I'm your fashion expert, ready to help you create amazing looks. What would you like to know about today?,casual conversation,,,0.95
+greet,hello fashion assistant,Hello! 👗 I'm your personal fashion assistant, here to help you discover your perfect style. What can I help you with today?,casual conversation,,,0.95
+ask_recommendation,I need fashion advice,Of course! I'd love to help you with fashion advice! 💫 What specific area are you looking for help with? Are you thinking about:
+• Outfit recommendations for a special occasion
+• Building a capsule wardrobe
+• Finding your personal style
+• Seasonal trends and must-haves
+• Body type styling tips
+
+Tell me more about what you have in mind!,fashion advice request,"High-waisted jeans, silk blouse, leather crossbody bag","Layer pieces for versatility, accessorize with statement jewelry",https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400,0.92
+ask_recommendation,suggest an outfit,Great choice! Let me help you create the perfect outfit! 👗✨ 
+
+To give you the best recommendations, I'd love to know:
+• What's the occasion? (casual, work, date night, etc.)
+• What's your preferred style? (minimalist, trendy, classic, etc.)
+• Any specific colors you love or want to avoid?
+• What's your budget range?
+
+Once you share these details, I'll curate some amazing outfit combinations just for you!,outfit request,"Blazer dress, ankle boots, statement earrings","Mix high and low pieces, focus on fit over trends",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400,0.94
+ask_recommendation,what's trending,Exciting! Let me share what's hot right now! 🔥
+
+**Spring/Summer 2025 Trends:**
+• **Pastel Power** - Soft lavender, mint green, and peach tones
+• **Sustainable Fashion** - Eco-friendly materials and conscious shopping
+• **90s Revival** - High-waisted jeans, crop tops, and chunky sneakers
+• **Minimalist Maximalism** - Clean lines with bold accessories
+• **Athleisure 2.0** - Elevated activewear for everyday wear
+
+**Must-Have Pieces:**
+• Oversized blazers
+• Wide-leg pants
+• Statement jewelry
+• Comfortable heels
+• Crossbody bags
+
+Would you like me to show you specific pieces in any of these categories?,trends request,"Oversized blazer, wide-leg jeans, statement earrings","Start with one trendy piece, build around classics",https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400,0.96
+specify_category,I want jeans,Perfect! Jeans are a wardrobe essential! 👖 Let me show you some amazing options:
+
+**Our Top Jeans Picks:**
+
+1. **High-Waisted Skinny Jeans** - $49.99
+   - Flattering high-rise fit
+   - Stretch denim for comfort
+   - Perfect for tucking in tops
+
+2. **Relaxed Fit Straight Jeans** - $59.99
+   - Comfortable straight leg
+   - Versatile for any occasion
+   - Great for all body types
+
+3. **Wide-Leg Jeans** - $69.99
+   - Trendy wide-leg silhouette
+   - High-waisted design
+   - Perfect for creating long legs
+
+**Styling Tips:**
+• Pair with a tucked-in blouse for a polished look
+• Add a belt to define your waist
+• Wear with sneakers for casual or heels for dressy
+
+What style appeals to you most? I can show you more details and styling options!,jeans request,"High-waisted skinny jeans, relaxed fit straight jeans, wide-leg jeans","Tuck in tops, add belts, mix with different shoes",https://images.unsplash.com/photo-1542272604-787c3835535d?w=400,0.93
+specify_category,I need tops,Absolutely! Tops are the foundation of any great outfit! 👚 Here are some fabulous options:
+
+**Our Top Tops Picks:**
+
+1. **Relaxed Fit T-Shirt** - $24.99
+   - 100% organic cotton
+   - Perfect for layering
+   - Available in multiple colors
+
+2. **Silk Blouse** - $89.99
+   - Luxurious silk fabric
+   - Professional and elegant
+   - Perfect for work or special occasions
+
+3. **Chunky Knit Sweater** - $69.99
+   - Cozy wool blend
+   - Perfect for cold weather
+   - Relaxed, comfortable fit
+
+**Styling Tips:**
+• Layer t-shirts under blazers for a smart-casual look
+• Tuck silk blouses into high-waisted bottoms
+• Pair sweaters with jeans or skirts
+
+Which style catches your eye? I can show you more details and help you style them!,tops request,"Relaxed fit t-shirt, silk blouse, chunky knit sweater","Layer for versatility, tuck for polish, accessorize minimally",https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400,0.94
+specify_category,I want dresses,Gorgeous! Dresses are perfect for any occasion! 👗 Let me show you some stunning options:
+
+**Our Top Dresses Picks:**
+
+1. **Blazer Dress** - $89.99
+   - Professional and sophisticated
+   - Perfect for work or interviews
+   - Structured silhouette
+
+2. **Maxi Dress** - $79.99
+   - Beautiful floral pattern
+   - Perfect for summer events
+   - Flowy, romantic silhouette
+
+3. **Casual Midi Dress** - $59.99
+   - Versatile for everyday wear
+   - Comfortable and stylish
+   - Great for all body types
+
+**Styling Tips:**
+• Add a belt to define your waist
+• Layer with a denim jacket for casual looks
+• Accessorize with statement jewelry
+
+What occasion are you shopping for? I can recommend the perfect dress for you!,dresses request,"Blazer dress, maxi dress, casual midi dress","Add belts for definition, layer for versatility, accessorize thoughtfully",https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400,0.95
+specify_category,I want shoes,Perfect! Shoes can make or break an outfit! 👠 Let me show you some fabulous options:
+
+**Our Top Shoes Picks:**
+
+1. **Comfortable Block Heels** - $79.99
+   - 3-inch block heel for stability
+   - Perfect for work or events
+   - Available in multiple colors
+
+2. **Classic Sneakers** - $59.99
+   - Versatile for everyday wear
+   - Comfortable and stylish
+   - Great for casual outfits
+
+3. **Ankle Boots** - $89.99
+   - Perfect for fall and winter
+   - Versatile with jeans or dresses
+   - Comfortable heel height
+
+**Styling Tips:**
+• Match shoe color to your outfit's color palette
+• Consider the occasion when choosing heel height
+• Invest in quality shoes that last
+
+What style are you looking for? I can help you find the perfect pair!,shoes request,"Block heels, classic sneakers, ankle boots","Match colors to outfit, consider occasion, invest in quality",https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400,0.93
+specify_category,I need accessories,Excellent choice! Accessories are the finishing touch that elevates any outfit! 💍 Let me show you some stunning options:
+
+**Our Top Accessories Picks:**
+
+1. **Statement Earrings** - $29.99
+   - Bold and eye-catching
+   - Perfect for special occasions
+   - Available in various styles
+
+2. **Leather Crossbody Bag** - $49.99
+   - Hands-free convenience
+   - Perfect for everyday use
+   - Versatile with any outfit
+
+3. **Layered Necklaces** - $39.99
+   - Trendy layered look
+   - Perfect for layering
+   - Great for casual and dressy looks
+
+**Styling Tips:**
+• Choose one statement piece per outfit
+• Mix metals for a modern look
+• Consider your neckline when choosing necklaces
+
+What type of accessory are you looking for? I can help you find the perfect piece!,accessories request,"Statement earrings, crossbody bag, layered necklaces","One statement piece per outfit, mix metals, consider neckline",https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400,0.94
+specify_category,I want outerwear,Perfect! Outerwear is essential for completing your look! 🧥 Let me show you some amazing options:
+
+**Our Top Outerwear Picks:**
+
+1. **Oversized Blazer** - $89.99
+   - Trendy oversized fit
+   - Perfect for work or casual
+   - Versatile with any outfit
+
+2. **Classic Trench Coat** - $129.99
+   - Timeless and elegant
+   - Perfect for spring and fall
+   - Great investment piece
+
+3. **Cozy Cardigan** - $59.99
+   - Comfortable and warm
+   - Perfect for layering
+   - Available in various colors
+
+**Styling Tips:**
+• Layer over any outfit for instant polish
+• Choose neutral colors for maximum versatility
+• Consider the weather and occasion
+
+What style of outerwear are you looking for? I can help you find the perfect piece!,outerwear request,"Oversized blazer, trench coat, cozy cardigan","Layer for polish, choose neutrals, consider weather",https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400,0.95
+ask_size_guide,size guide help,Of course! Let me help you find your perfect fit! 📏
+
+**How to Measure Yourself:**
+
+**Bust:** Measure around the fullest part of your chest
+**Waist:** Measure around your natural waistline
+**Hips:** Measure around the fullest part of your hips
+**Inseam:** Measure from crotch to desired length
+
+**Our Size Chart:**
+• **XS:** Bust 32", Waist 24", Hips 34"
+• **S:** Bust 34", Waist 26", Hips 36"
+• **M:** Bust 36", Waist 28", Hips 38"
+• **L:** Bust 38", Waist 30", Hips 40"
+• **XL:** Bust 40", Waist 32", Hips 42"
+• **XXL:** Bust 42", Waist 34", Hips 44"
+
+**Pro Tips:**
+• When in doubt, size up for comfort
+• Check the fit guide for each specific item
+• Consider your preferred fit (slim, regular, relaxed)
+
+What size are you looking for? I can help you find the perfect fit!,size guidance,,,0.97
+ask_trending,what's in style,Exciting! Let me share what's trending right now! 🌟
+
+**Spring/Summer 2025 Trends:**
+
+**Colors:**
+• **Pastel Power:** Soft lavender, mint green, peach
+• **Neutral Neutrals:** Beige, cream, warm whites
+• **Bold Brights:** Electric blue, hot pink, sunshine yellow
+
+**Silhouettes:**
+• **Oversized Everything:** Blazers, sweaters, shirts
+• **High-Waisted:** Jeans, skirts, shorts
+• **Wide-Leg:** Pants, jeans, skirts
+
+**Fabrics:**
+• **Sustainable Materials:** Organic cotton, recycled polyester
+• **Textured Knits:** Chunky sweaters, cable knit
+• **Lightweight:** Linen, silk, breathable cotton
+
+**Accessories:**
+• **Statement Jewelry:** Bold earrings, layered necklaces
+• **Crossbody Bags:** Hands-free convenience
+• **Comfortable Heels:** Block heels, platform sandals
+
+**Must-Have Pieces:**
+• Oversized blazer
+• High-waisted wide-leg jeans
+• Statement earrings
+• Crossbody bag
+• Comfortable block heels
+
+Which trend interests you most? I can show you specific pieces!,trends information,"Oversized blazer, wide-leg jeans, statement earrings","Start with one trendy piece, build around classics",https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400,0.96
+ask_outfit_combination,outfit combination,Perfect! Let me help you create a complete outfit! 👗✨
+
+**Complete Outfit Ideas:**
+
+**Casual Day Look:**
+• Relaxed fit t-shirt + High-waisted jeans + Sneakers + Crossbody bag
+
+**Work Professional:**
+• Silk blouse + Wide-leg pants + Block heels + Structured bag
+
+**Date Night:**
+• Midi dress + Ankle boots + Statement earrings + Clutch
+
+**Weekend Brunch:**
+• Oversized blazer + Jeans + Sneakers + Layered necklaces
+
+**Styling Tips:**
+• Start with one statement piece
+• Mix high and low items
+• Consider color coordination
+• Accessorize thoughtfully
+
+What occasion are you dressing for? I can create a perfect outfit for you!,outfit combination request,"Complete outfit combinations for various occasions","Start with statement piece, mix high and low, coordinate colors",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400,0.94
+ask_style_advice,style advice,Absolutely! Let me give you some expert style advice! 💫
+
+**Universal Style Tips:**
+
+**For Every Body Type:**
+• Focus on fit over size
+• Choose clothes that make you feel confident
+• Invest in quality basics
+• Don't be afraid to experiment
+
+**Color Coordination:**
+• Start with neutral basics
+• Add pops of color with accessories
+• Consider your skin tone
+• Use the color wheel for complementary colors
+
+**Building a Wardrobe:**
+• Start with 10-15 versatile pieces
+• Mix and match items
+• Invest in quality over quantity
+• Consider your lifestyle
+
+**Accessorizing:**
+• Less is more - choose one statement piece
+• Mix metals for a modern look
+• Consider the occasion
+• Let accessories complement, not compete
+
+What specific area would you like advice on? I'm here to help!,style advice request,"Versatile wardrobe pieces, quality basics, statement accessories","Focus on fit, start with neutrals, invest in quality",https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400,0.95
+ask_personalized_advice,personalized advice,Of course! I'd love to give you personalized style advice! 💫
+
+To provide the best recommendations, I'd like to know:
+
+**About You:**
+• What's your body type? (hourglass, petite, plus size, etc.)
+• What age group are you in?
+• What's your preferred style? (classic, trendy, minimalist, etc.)
+
+**About Your Lifestyle:**
+• What occasions do you dress for most?
+• What's your budget range?
+• What's your comfort level with fashion?
+
+**About Your Goals:**
+• What image do you want to project?
+• What areas do you want to improve?
+• What's your biggest style challenge?
+
+Once you share these details, I can give you tailored advice that's perfect for you!,personalized advice request,"Body type specific recommendations, age-appropriate styles, lifestyle-based suggestions","Consider body type, match lifestyle, set realistic goals",https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400,0.93
+ask_fashion_tips,fashion tips,Excellent! Let me share some valuable fashion tips! 💡
+
+**Essential Fashion Tips:**
+
+**Shopping Smart:**
+• Always try clothes on before buying
+• Check the fabric quality
+• Consider care instructions
+• Think about versatility
+
+**Caring for Clothes:**
+• Read care labels carefully
+• Use cold water to preserve colors
+• Air dry when possible
+• Store clothes properly
+
+**Building a Capsule Wardrobe:**
+• Start with 10-15 versatile pieces
+• Choose neutral colors as base
+• Add seasonal pieces
+• Mix and match everything
+
+**Styling Secrets:**
+• Tuck in tops for polish
+• Add a belt to define waist
+• Layer for dimension
+• Accessorize thoughtfully
+
+**Budget-Friendly Tips:**
+• Invest in quality basics
+• Shop sales strategically
+• Mix high and low pieces
+• Take care of what you have
+
+Which area would you like to learn more about?,fashion tips request,"Quality basics, versatile pieces, care essentials","Invest in basics, care for clothes, mix high and low",https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400,0.96
+goodbye,bye,Thanks for chatting with me! 👋 I hope I helped you discover some amazing fashion inspiration. Don't forget to check out our latest collection - there's always something new to love! Come back anytime for more style advice. Happy shopping! ✨,farewell,,,0.95
+goodbye,goodbye,It's been a pleasure helping you with your style journey! 💫 Remember, great fashion is all about confidence and feeling amazing in what you wear. Check out our website for the latest trends and don't hesitate to come back for more fashion advice. Stay fabulous! 👗✨,farewell,,,0.95
+goodbye,see you later,See you later! 👋 Thanks for spending time with your fashion assistant. I hope you found some great style inspiration today. Remember, confidence is the best accessory! Come back anytime for more fashion advice. Stay stylish! ✨,farewell,,,0.95 

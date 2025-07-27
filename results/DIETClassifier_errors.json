@@ -1,0 +1,1275 @@
+[
+  {
+    "text": "I'm looking for dresses",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "dresses",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need tops",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "tops",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "show me bottoms",
+    "entities": [
+      {
+        "start": 8,
+        "end": 15,
+        "value": "bottoms",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want shoes",
+    "entities": [
+      {
+        "start": 7,
+        "end": 12,
+        "value": "shoes",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "looking for accessories",
+    "entities": [
+      {
+        "start": 12,
+        "end": 23,
+        "value": "accessories",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want dresses",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "dresses",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "show me tops",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "tops",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "recommend shoes",
+    "entities": [
+      {
+        "start": 10,
+        "end": 15,
+        "value": "shoes",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "suggest accessories",
+    "entities": [
+      {
+        "start": 8,
+        "end": 19,
+        "value": "accessories",
+        "entity": "clothing_category"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need outerwear",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "clothing_category",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.5700058937072754,
+        "value": "outerwear",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want red dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.7101536989212036,
+        "value": "red",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.7055736780166626,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want blue dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7340857982635498,
+        "value": "blue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.6835572123527527,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want black dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7044075131416321,
+        "value": "black",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.6577311158180237,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want white dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.79507976770401,
+        "value": "white",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.7108854651451111,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want green dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7074562907218933,
+        "value": "green",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.6707842946052551,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want pink dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.6875644326210022,
+        "value": "pink",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.6549491286277771,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want purple dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.6167652606964111,
+        "value": "purple",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.5665171146392822,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want orange dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.7594789266586304,
+        "value": "orange",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.7608873248100281,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want brown dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.669680655002594,
+        "value": "brown",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.6376468539237976,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want grey dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7042863965034485,
+        "value": "grey",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.678878903388977,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want yellow dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.6770943999290466,
+        "value": "yellow",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.657773494720459,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want navy dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.6833721995353699,
+        "value": "navy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.6607967019081116,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want beige dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7030680775642395,
+        "value": "beige",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.6605862975120544,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want cream dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.6410358548164368,
+        "value": "cream",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.6253483891487122,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want red top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.7484862208366394,
+        "value": "red",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.6765450239181519,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want blue top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7505287528038025,
+        "value": "blue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.6370188593864441,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want black top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7205665707588196,
+        "value": "black",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.5891091823577881,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want white top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7752482891082764,
+        "value": "white",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.5913652777671814,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want green top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7610929608345032,
+        "value": "green",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.6613407135009766,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want pink top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7193790078163147,
+        "value": "pink",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.6333416700363159,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want purple top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.6871570348739624,
+        "value": "purple",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.5825513005256653,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want orange top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.7997138500213623,
+        "value": "orange",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.7389246225357056,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want brown top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7040662169456482,
+        "value": "brown",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.6239112019538879,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want grey top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7300650477409363,
+        "value": "grey",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.6339647173881531,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want yellow top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.7098474502563477,
+        "value": "yellow",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.6197056770324707,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want navy top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.7297014594078064,
+        "value": "navy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.671137273311615,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want beige top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.7367507219314575,
+        "value": "beige",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.6585476398468018,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want cream top",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.721266508102417,
+        "value": "cream",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.659075140953064,
+        "value": "top",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a red dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.725797712802887,
+        "value": "red",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.7236387133598328,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a blue dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.7421568036079407,
+        "value": "blue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.6938914060592651,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a black dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7088784575462341,
+        "value": "black",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.6613731384277344,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a white dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.797976016998291,
+        "value": "white",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.7116807103157043,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a green dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7366663813591003,
+        "value": "green",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.7120397686958313,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a pink dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.7133326530456543,
+        "value": "pink",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.6864182949066162,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a purple dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.6526381373405457,
+        "value": "purple",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.6152971386909485,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a brown dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.694769024848938,
+        "value": "brown",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.671980619430542,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a grey dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.7250257134437561,
+        "value": "grey",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.7064059376716614,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a yellow dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.711611270904541,
+        "value": "yellow",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.6962693929672241,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a navy dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.722684383392334,
+        "value": "navy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.7070653438568115,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a beige dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7153464555740356,
+        "value": "beige",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.6811870336532593,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want a cream dress",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "color",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.6754089593887329,
+        "value": "cream",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "clothing_category",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.665046751499176,
+        "value": "dress",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
