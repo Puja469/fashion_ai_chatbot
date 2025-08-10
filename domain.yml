@@ -31,6 +31,11 @@ intents:
   - ask_budget_advice
   - ask_accessory_advice
   - ask_fit_advice
+  - ask_tops
+  - ask_shirts
+  - ask_dresses
+  - ask_pants
+  - ask_shoes
   - nlu_fallback
 
 entities:
@@ -297,5 +302,10 @@ actions:
   - action_outfit_combination
   - action_style_advice
   - action_size_guide
+  - action_dress_recommendation
+  - action_tops_recommendation
+  - action_shirts_recommendation
+  - action_pants_recommendation
+  - action_shoes_recommendation
   - action_gemini_fallback
   - action_default_fallback
