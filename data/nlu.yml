@@ -1314,6 +1314,215 @@ nlu:
     - how to check right fit
     - fit advice for my body
 
+- intent: ask_dresses
+  examples: |
+    - I want dresses
+    - I need dresses
+    - show me dresses
+    - looking for dresses
+    - recommend dresses
+    - suggest dresses
+    - dresses please
+    - I'm looking for dresses
+    - I want to buy dresses
+    - I need to find dresses
+    - show me some dresses
+    - recommend me dresses
+    - suggest some dresses
+    - I'm shopping for dresses
+    - I'm browsing dresses
+    - I'm interested in dresses
+    - I'm looking to buy dresses
+    - I'm searching for dresses
+    - I'm in the market for dresses
+    - Can you show me some dresses?
+    - Do you have any dresses?
+    - What dresses do you recommend?
+    - I'd like to see dresses
+    - Any suggestions for dresses?
+    - I need help with dresses
+    - I'm after dresses
+    - I'm hunting for dresses
+    - I'm seeking dresses
+    - I want to purchase dresses
+    - I want to get dresses
+    - I want to find dresses
+    - I want to shop for dresses
+    - I want to invest in dresses
+    - I'm thinking about dresses
+    - I'm considering dresses
+    - I'm planning to buy dresses
+    - I'm thinking of getting dresses
+    - I'm planning to purchase dresses
+    - dresses for women
+    - women's dresses
+    - ladies dresses
+    - formal dresses
+    - casual dresses
+    - party dresses
+    - evening dresses
+    - cocktail dresses
+    - summer dresses
+    - winter dresses
+    - spring dresses
+    - fall dresses
+
+- intent: ask_tops
+  examples: |
+    - I want tops
+    - I need tops
+    - show me tops
+    - looking for tops
+    - recommend tops
+    - suggest tops
+    - tops please
+    - I'm looking for tops
+    - I want to buy tops
+    - I need to find tops
+    - show me some tops
+    - recommend me tops
+    - suggest some tops
+    - I'm shopping for tops
+    - I'm browsing tops
+    - I'm interested in tops
+    - I'm looking to buy tops
+    - I'm searching for tops
+    - I'm in the market for tops
+    - Can you show me some tops?
+    - Do you have any tops?
+    - What tops do you recommend?
+    - I'd like to see tops
+    - Any suggestions for tops?
+    - I need help with tops
+    - I'm after tops
+    - I'm hunting for tops
+    - I'm seeking tops
+    - I want to purchase tops
+    - I want to get tops
+    - I want to find tops
+    - I want to shop for tops
+    - I want to invest in tops
+    - I'm thinking about tops
+    - I'm considering tops
+    - I'm planning to buy tops
+    - I'm thinking of getting tops
+    - I'm planning to purchase tops
+    - tops for women
+    - women's tops
+    - ladies tops
+    - formal tops
+    - casual tops
+    - party tops
+    - evening tops
+    - summer tops
+    - winter tops
+    - spring tops
+    - fall tops
+
+- intent: ask_pants
+  examples: |
+    - I want pants
+    - I need pants
+    - show me pants
+    - looking for pants
+    - recommend pants
+    - suggest pants
+    - pants please
+    - I'm looking for pants
+    - I want to buy pants
+    - I need to find pants
+    - show me some pants
+    - recommend me pants
+    - suggest some pants
+    - I'm shopping for pants
+    - I'm browsing pants
+    - I'm interested in pants
+    - I'm looking to buy pants
+    - I'm searching for pants
+    - I'm in the market for pants
+    - Can you show me some pants?
+    - Do you have any pants?
+    - What pants do you recommend?
+    - I'd like to see pants
+    - Any suggestions for pants?
+    - I need help with pants
+    - I'm after pants
+    - I'm hunting for pants
+    - I'm seeking pants
+    - I want to purchase pants
+    - I want to get pants
+    - I want to find pants
+    - I want to shop for pants
+    - I want to invest in pants
+    - I'm thinking about pants
+    - I'm considering pants
+    - I'm planning to buy pants
+    - I'm thinking of getting pants
+    - I'm planning to purchase pants
+    - pants for women
+    - women's pants
+    - ladies pants
+    - formal pants
+    - casual pants
+    - party pants
+    - evening pants
+    - summer pants
+    - winter pants
+    - spring pants
+    - fall pants
+
+- intent: ask_shoes
+  examples: |
+    - I want shoes
+    - I need shoes
+    - show me shoes
+    - looking for shoes
+    - recommend shoes
+    - suggest shoes
+    - shoes please
+    - I'm looking for shoes
+    - I want to buy shoes
+    - I need to find shoes
+    - show me some shoes
+    - recommend me shoes
+    - suggest some shoes
+    - I'm shopping for shoes
+    - I'm browsing shoes
+    - I'm interested in shoes
+    - I'm looking to buy shoes
+    - I'm searching for shoes
+    - I'm in the market for shoes
+    - Can you show me some shoes?
+    - Do you have any shoes?
+    - What shoes do you recommend?
+    - I'd like to see shoes
+    - Any suggestions for shoes?
+    - I need help with shoes
+    - I'm after shoes
+    - I'm hunting for shoes
+    - I'm seeking shoes
+    - I want to purchase shoes
+    - I want to get shoes
+    - I want to find shoes
+    - I want to shop for shoes
+    - I want to invest in shoes
+    - I'm thinking about shoes
+    - I'm considering shoes
+    - I'm planning to buy shoes
+    - I'm thinking of getting shoes
+    - I'm planning to purchase shoes
+    - shoes for women
+    - women's shoes
+    - ladies shoes
+    - formal shoes
+    - casual shoes
+    - party shoes
+    - evening shoes
+    - summer shoes
+    - winter shoes
+    - spring shoes
+    - fall shoes
+
 - intent: nlu_fallback
   examples: |
     - asdfasfasdf

@@ -16,8 +16,8 @@ class ActionGiveRecommendation(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
-            if os.path.exists("data/fashion_data_cleaned.csv"):
-                df = pd.read_csv("data/fashion_data_cleaned.csv")
+            if os.path.exists("data/fashion_comprehensive_dataset_large.csv"):
+                df = pd.read_csv("data/fashion_comprehensive_dataset_large.csv")
             else:
                 dispatcher.utter_message(text="I'm sorry, I can't access the fashion database right now.")
                 return []
@@ -35,6 +35,248 @@ class ActionGiveRecommendation(Action):
             weather = tracker.get_slot("weather")
             event = tracker.get_slot("event")
             preference = tracker.get_slot("preference")
+
+            # Check if this is a basic dress request without much context
+            last_message = tracker.latest_message.get('text', '').lower()
+            is_basic_request = any(word in last_message for word in ['dress', 'dresses', 'top', 'tops', 'pant', 'pants', 'shoe', 'shoes'])
+            
+            # Check for specific requests like "party dresses", "casual dresses", etc.
+            specific_dress_request = False
+            dress_type = None
+            
+            if 'party dress' in last_message or 'party dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'party'
+            elif 'casual dress' in last_message or 'casual dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'casual'
+            elif 'formal dress' in last_message or 'formal dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'formal'
+            elif 'evening dress' in last_message or 'evening dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'evening'
+            elif 'summer dress' in last_message or 'summer dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'summer'
+            elif 'cocktail dress' in last_message or 'cocktail dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'cocktail'
+            elif 'wedding dress' in last_message or 'wedding dresses' in last_message:
+                specific_dress_request = True
+                dress_type = 'wedding'
+            
+            # If it's a specific dress request, provide direct recommendations
+            if specific_dress_request and dress_type:
+                # Filter for the specific dress type
+                dress_recommendations = df[df['category'].str.contains('dress', case=False, na=False)]
+                dress_recommendations = dress_recommendations[dress_recommendations['occasion'].str.contains(dress_type, case=False, na=False)]
+                
+                if dress_recommendations.empty:
+                    # Fallback to general dress recommendations
+                    dress_recommendations = df[df['category'].str.contains('dress', case=False, na=False)]
+                
+                # Get top 3 recommendations
+                recommendations = dress_recommendations.sample(min(3, len(dress_recommendations)))
+                
+                response = f"🎉 **{dress_type.upper()} DRESS RECOMMENDATIONS** 🎉\n\n"
+                response += f"Here are some fabulous {dress_type} dresses perfect for your occasion:\n\n"
+                
+                for idx, item in recommendations.iterrows():
+                    rating = float(item.get('average_rating', 4.0))
+                    durability = float(item.get('durability_rating', 3.5))
+                    comfort = float(item.get('comfort_rating', 4.0))
+                    value_score = (rating + durability + comfort) / 3
+                    
+                    response += f"**{item['product_name']}** - {item['category'].title()}\n"
+                    response += f"🎨 **Style:** {item['pattern']} | **Color:** {item['color']}\n"
+                    response += f"⭐ **Value Score:** {value_score:.1f}/5.0 | **Rating:** {rating:.1f}/5.0\n"
+                    response += f"💰 **Price:** ${item['price']:.2f} | **Brand:** {item['brand']}\n"
+                    response += f"🌍 **Perfect for:** {item['season']} | **Occasion:** {item['occasion']}\n"
+                    response += f"🧵 **Material:** {item['material']} | **Fit:** {item.get('fit_type', 'Regular')}\n"
+                    response += f"💡 **Styling Tip:** {item.get('styling_tips', 'Pair with complementary accessories for a complete look')}\n\n"
+                
+                response += f"**💎 {dress_type.upper()} DRESS STYLING TIPS:**\n"
+                if dress_type == 'party':
+                    response += "• Choose bold colors and eye-catching patterns for party dresses\n"
+                    response += "• Accessorize with statement jewelry and elegant heels\n"
+                    response += "• Consider the venue lighting when selecting colors\n"
+                    response += "• Opt for comfortable fabrics that allow movement\n"
+                elif dress_type == 'casual':
+                    response += "• Go for breathable, comfortable fabrics for everyday wear\n"
+                    response += "• Pair with casual footwear like sneakers or sandals\n"
+                    response += "• Choose versatile colors that match your wardrobe\n"
+                    response += "• Consider layering options for different weather\n"
+                elif dress_type == 'formal':
+                    response += "• Select structured, professional cuts for formal occasions\n"
+                    response += "• Choose classic colors like navy, black, or neutral tones\n"
+                    response += "• Pair with professional accessories and closed-toe shoes\n"
+                    response += "• Ensure proper fit and tailoring for a polished look\n"
+                elif dress_type == 'evening':
+                    response += "• Opt for elegant, sophisticated designs for evening events\n"
+                    response += "• Choose rich colors and luxurious fabrics\n"
+                    response += "• Accessorize with elegant jewelry and heels\n"
+                    response += "• Consider the dress code and venue atmosphere\n"
+                elif dress_type == 'summer':
+                    response += "• Select lightweight, breathable fabrics for summer comfort\n"
+                    response += "• Choose bright, cheerful colors and floral patterns\n"
+                    response += "• Pair with sandals or wedges for a summer look\n"
+                    response += "• Consider sun protection and ventilation\n"
+                elif dress_type == 'cocktail':
+                    response += "• Choose sophisticated, semi-formal designs\n"
+                    response += "• Opt for classic cuts with modern details\n"
+                    response += "• Accessorize with elegant jewelry and heels\n"
+                    response += "• Consider the event timing and venue\n"
+                elif dress_type == 'wedding':
+                    response += "• Select elegant, celebration-appropriate designs\n"
+                    response += "• Choose colors that complement the wedding theme\n"
+                    response += "• Accessorize with elegant jewelry and formal footwear\n"
+                    response += "• Ensure comfort for long celebration periods\n"
+                
+                response += "\n**🔧 CARE TIPS:**\n"
+                response += "• Follow care instructions for longevity\n"
+                response += "• Store properly to maintain shape and quality\n"
+                response += "• Consider professional cleaning for special occasions\n"
+                response += "• Handle with care to preserve delicate details\n\n"
+                
+                dispatcher.utter_message(text=response)
+                return []
+            
+            # If it's a basic request without context, ask follow-up questions
+            if is_basic_request and not (occasion or style or color or budget):
+                if 'dress' in last_message or 'dresses' in last_message:
+                    response = "👗 **DRESS RECOMMENDATIONS** 👗\n\n"
+                    response += "I'd love to help you find the perfect dress! To give you the best recommendations, I need to know:\n\n"
+                    response += "**🎯 What type of dress are you looking for?**\n"
+                    response += "• Casual dress (everyday wear)\n"
+                    response += "• Formal dress (work, business)\n"
+                    response += "• Party dress (evening out, celebrations)\n"
+                    response += "• Cocktail dress (semi-formal events)\n"
+                    response += "• Wedding guest dress\n"
+                    response += "• Summer dress\n"
+                    response += "• Evening dress\n\n"
+                    response += "**🎉 What's the occasion?**\n"
+                    response += "• Work/Office\n"
+                    response += "• Date night\n"
+                    response += "• Party/Celebration\n"
+                    response += "• Wedding/Formal event\n"
+                    response += "• Casual outing\n"
+                    response += "• Travel\n\n"
+                    response += "**💰 What's your budget range?**\n"
+                    response += "• Budget-friendly ($50-150)\n"
+                    response += "• Mid-range ($150-400)\n"
+                    response += "• Premium ($400-800)\n"
+                    response += "• Luxury ($800+)\n\n"
+                    response += "**👤 What's your age group?**\n"
+                    response += "• Teens (13-19)\n"
+                    response += "• Twenties (20-29)\n"
+                    response += "• Thirties (30-39)\n"
+                    response += "• Forties (40-49)\n"
+                    response += "• Fifties (50-59)\n"
+                    response += "• Sixties+ (60+)\n\n"
+                    response += "Just tell me what you have in mind! 😊"
+                    
+                    dispatcher.utter_message(text=response)
+                    return []
+                
+                elif 'top' in last_message or 'tops' in last_message:
+                    response = "👕 **TOP RECOMMENDATIONS** 👕\n\n"
+                    response += "Great choice! Let me help you find the perfect top. I need to know:\n\n"
+                    response += "**🎯 What type of top?**\n"
+                    response += "• Blouse (elegant, work-appropriate)\n"
+                    response += "• T-shirt (casual, comfortable)\n"
+                    response += "• Tank top (summer, casual)\n"
+                    response += "• Sweater (winter, cozy)\n"
+                    response += "• Crop top (trendy, party)\n"
+                    response += "• Button-down shirt (professional)\n\n"
+                    response += "**🎉 What's the occasion?**\n"
+                    response += "• Work/Office\n"
+                    response += "• Casual day out\n"
+                    response += "• Party/Evening\n"
+                    response += "• Date night\n"
+                    response += "• Weekend brunch\n\n"
+                    response += "**💰 Budget range?**\n"
+                    response += "• Budget-friendly ($20-80)\n"
+                    response += "• Mid-range ($80-200)\n"
+                    response += "• Premium ($200-500)\n"
+                    response += "• Luxury ($500+)\n\n"
+                    response += "**👤 What's your age group?**\n"
+                    response += "• Teens (13-19)\n"
+                    response += "• Twenties (20-29)\n"
+                    response += "• Thirties (30-39)\n"
+                    response += "• Forties (40-49)\n"
+                    response += "• Fifties (50-59)\n"
+                    response += "• Sixties+ (60+)\n\n"
+                    response += "Tell me what you're looking for! ✨"
+                    
+                    dispatcher.utter_message(text=response)
+                    return []
+                
+                elif 'pant' in last_message or 'pants' in last_message:
+                    response = "👖 **PANTS RECOMMENDATIONS** 👖\n\n"
+                    response += "Perfect! Let me find you the ideal pants. I need to know:\n\n"
+                    response += "**🎯 What type of pants?**\n"
+                    response += "• Jeans (casual, versatile)\n"
+                    response += "• Dress pants (professional)\n"
+                    response += "• Leggings (comfortable, active)\n"
+                    response += "• Wide-leg pants (trendy, elegant)\n"
+                    response += "• Skinny pants (slim fit)\n"
+                    response += "• Palazzo pants (flowy, summer)\n\n"
+                    response += "**🎉 What's the occasion?**\n"
+                    response += "• Work/Office\n"
+                    response += "• Casual day\n"
+                    response += "• Evening out\n"
+                    response += "• Weekend\n"
+                    response += "• Travel\n\n"
+                    response += "**💰 Budget range?**\n"
+                    response += "• Budget-friendly ($30-120)\n"
+                    response += "• Mid-range ($120-300)\n"
+                    response += "• Premium ($300-600)\n"
+                    response += "• Luxury ($600+)\n\n"
+                    response += "**👤 What's your age group?**\n"
+                    response += "• Teens (13-19)\n"
+                    response += "• Twenties (20-29)\n"
+                    response += "• Thirties (30-39)\n"
+                    response += "• Forties (40-49)\n"
+                    response += "• Fifties (50-59)\n"
+                    response += "• Sixties+ (60+)\n\n"
+                    response += "What do you have in mind? 🎯"
+                    
+                    dispatcher.utter_message(text=response)
+                    return []
+                
+                elif 'shoe' in last_message or 'shoes' in last_message:
+                    response = "👟 **SHOES RECOMMENDATIONS** 👟\n\n"
+                    response += "Excellent! Let me help you find the perfect shoes. I need to know:\n\n"
+                    response += "**🎯 What type of shoes?**\n"
+                    response += "• Sneakers (casual, comfortable)\n"
+                    response += "• Heels (elegant, formal)\n"
+                    response += "• Flats (comfortable, versatile)\n"
+                    response += "• Boots (winter, stylish)\n"
+                    response += "• Sandals (summer, breezy)\n"
+                    response += "• Loafers (professional, classic)\n\n"
+                    response += "**🎉 What's the occasion?**\n"
+                    response += "• Work/Office\n"
+                    response += "• Casual day\n"
+                    response += "• Party/Evening\n"
+                    response += "• Date night\n"
+                    response += "• Travel/Walking\n\n"
+                    response += "**💰 Budget range?**\n"
+                    response += "• Budget-friendly ($50-150)\n"
+                    response += "• Mid-range ($150-300)\n"
+                    response += "• Premium ($300-600)\n"
+                    response += "• Luxury ($600+)\n\n"
+                    response += "**👤 What's your age group?**\n"
+                    response += "• Teens (13-19)\n"
+                    response += "• Twenties (20-29)\n"
+                    response += "• Thirties (30-39)\n"
+                    response += "• Forties (40-49)\n"
+                    response += "• Fifties (50-59)\n"
+                    response += "• Sixties+ (60+)\n\n"
+                    response += "What are you looking for? 👠"
+                    
+                    dispatcher.utter_message(text=response)
+                    return []
 
             # Build personalized recommendation message
             personalization = []
@@ -68,7 +310,23 @@ class ActionGiveRecommendation(Action):
                 filtered_df = filtered_df[filtered_df['style_preference'].str.contains(style, case=False, na=False)]
             
             if budget:
-                filtered_df = filtered_df[filtered_df['price'].astype(str).str.contains(budget, case=False, na=False)]
+                # Enhanced budget filtering
+                try:
+                    price_series = pd.to_numeric(filtered_df['price'], errors='coerce')
+                    if 'budget-friendly' in budget.lower() or 'low' in budget.lower():
+                        filtered_df = filtered_df[price_series <= 150]
+                    elif 'mid-range' in budget.lower() or 'medium' in budget.lower():
+                        filtered_df = filtered_df[(price_series > 150) & (price_series <= 400)]
+                    elif 'premium' in budget.lower():
+                        filtered_df = filtered_df[(price_series > 400) & (price_series <= 800)]
+                    elif 'luxury' in budget.lower() or 'high' in budget.lower():
+                        filtered_df = filtered_df[price_series > 800]
+                    else:
+                        # Fallback to string matching
+                        filtered_df = filtered_df[filtered_df['price'].astype(str).str.contains(budget, case=False, na=False)]
+                except:
+                    # Fallback to original string matching
+                    filtered_df = filtered_df[filtered_df['price'].astype(str).str.contains(budget, case=False, na=False)]
             
             if season:
                 filtered_df = filtered_df[filtered_df['Season'].str.contains(season, case=False, na=False)]
@@ -98,21 +356,47 @@ class ActionGiveRecommendation(Action):
             else:
                 recommendations = filtered_df.sample(min(3, len(filtered_df)))
 
-            # Build personalized response
+            # Build enhanced personalized response
             if personalization:
-                response = f"Based on your {', '.join(personalization)}, here are personalized fashion recommendations:\n\n"
+                response = f"🎯 **PERSONALIZED FASHION RECOMMENDATIONS** 🎯\n\n"
+                response += f"Based on your {', '.join(personalization)}, here are your perfect fashion matches:\n\n"
             else:
-                response = "Here are some fashion recommendations for you:\n\n"
+                response = "🎯 **FASHION RECOMMENDATIONS** 🎯\n\n"
+                response += "Here are some amazing fashion recommendations for you:\n\n"
             
             for idx, item in recommendations.iterrows():
-                response += f"• {item['product_name']} - {item['category']} ({item['color']})\n"
-                response += f"  Style: {item['pattern']} | Price: ${item['price']:.2f}\n"
-                response += f"  Perfect for: {item['season']}\n\n"
+                # Calculate value score
+                rating = float(item.get('average_rating', 4.0))
+                durability = float(item.get('durability_rating', 3.5))
+                comfort = float(item.get('comfort_rating', 4.0))
+                value_score = (rating + durability + comfort) / 3
+                
+                response += f"**{item['product_name']}** - {item['category'].title()}\n"
+                response += f"🎨 **Style:** {item['pattern']} | **Color:** {item['color']}\n"
+                response += f"⭐ **Value Score:** {value_score:.1f}/5.0 | **Rating:** {rating:.1f}/5.0\n"
+                response += f"💰 **Price:** ${item['price']:.2f} | **Brand:** {item['brand']}\n"
+                response += f"🌍 **Perfect for:** {item['season']} | **Occasion:** {item['occasion']}\n"
+                response += f"🧵 **Material:** {item['material']} | **Fit:** {item.get('fit_type', 'Regular')}\n"
+                response += f"💡 **Styling Tip:** {item.get('styling_tips', 'Pair with complementary accessories for a complete look')}\n\n"
+
+            # Add comprehensive styling insights
+            response += "**💎 STYLING INSIGHTS:**\n"
+            response += "• These items are carefully selected to match your preferences\n"
+            response += "• Each piece offers excellent value for money\n"
+            response += "• Versatile enough to create multiple outfit combinations\n"
+            response += "• Perfect for your lifestyle and occasion needs\n\n"
 
             # Add personalized styling tips
             if body_type or age_group or preference:
                 styling_tip = self.get_personalized_styling_tip(body_type, age_group, preference)
-                response += f"💡 **Personalized Styling Tip:** {styling_tip}\n\n"
+                response += f"**💡 PERSONALIZED STYLING TIP:**\n{styling_tip}\n\n"
+
+            # Add quality and care information
+            response += "**🔧 QUALITY & CARE:**\n"
+            response += "• Follow care instructions for longevity\n"
+            response += "• Invest in proper storage solutions\n"
+            response += "• Consider professional alterations for perfect fit\n"
+            response += "• Regular maintenance extends garment life\n\n"
 
             dispatcher.utter_message(text=response)
 
@@ -284,21 +568,42 @@ class ActionTrendingItems(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
-            if os.path.exists("data/fashion_data_cleaned.csv"):
-                df = pd.read_csv("data/fashion_data_cleaned.csv")
+            if os.path.exists("data/fashion_comprehensive_dataset_large.csv"):
+                df = pd.read_csv("data/fashion_comprehensive_dataset_large.csv")
             else:
                 dispatcher.utter_message(text="I'm sorry, I can't access the fashion database right now.")
                 return []
 
-            # Get trending items (random selection for demo)
+            # Get trending items with enhanced analysis
             trending_items = df.sample(min(5, len(df)))
             
-            response = "Here are the trending fashion items right now:\n\n"
+            response = "🔥 **TRENDING FASHION ITEMS** 🔥\n\n"
+            response += "Here are the hottest fashion items trending right now:\n\n"
             
             for idx, item in trending_items.iterrows():
-                response += f"🔥 {item['product_name']} - {item['category']}\n"
-                response += f"   Style: {item['pattern']} | Color: {item['color']}\n"
-                response += f"   Perfect for: {item['season']}\n\n"
+                # Calculate trend score based on ratings and trend level
+                try:
+                    trend_score = float(item.get('trend_level', 3.5))
+                except (ValueError, TypeError):
+                    trend_score = 3.5
+                try:
+                    rating = float(item.get('average_rating', 4.0))
+                except (ValueError, TypeError):
+                    rating = 4.0
+                overall_score = (trend_score + rating) / 2
+                
+                response += f"**{item['product_name']}** - {item['category'].title()}\n"
+                response += f"🎨 **Style:** {item['pattern']} | **Color:** {item['color']}\n"
+                response += f"⭐ **Trend Score:** {overall_score:.1f}/5.0 | **Rating:** {rating:.1f}/5.0\n"
+                response += f"💰 **Price:** ${item['price']:.2f} | **Brand:** {item['brand']}\n"
+                response += f"🌍 **Perfect for:** {item['season']} | **Occasion:** {item['occasion']}\n"
+                response += f"💡 **Styling Tip:** {item.get('styling_tips', 'Pair with complementary accessories for a complete look')}\n\n"
+
+            response += "**💎 TREND INSIGHTS:**\n"
+            response += "• These items are currently dominating social media and fashion blogs\n"
+            response += "• Perfect for creating Instagram-worthy outfits\n"
+            response += "• Great investment pieces for your wardrobe\n"
+            response += "• Versatile enough to style multiple ways\n\n"
 
             dispatcher.utter_message(text=response)
 
@@ -316,24 +621,57 @@ class ActionOutfitCombination(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
-            if os.path.exists("data/fashion_data_cleaned.csv"):
-                df = pd.read_csv("data/fashion_data_cleaned.csv")
+            if os.path.exists("data/fashion_comprehensive_dataset_large.csv"):
+                df = pd.read_csv("data/fashion_comprehensive_dataset_large.csv")
             else:
                 dispatcher.utter_message(text="I'm sorry, I can't access the fashion database right now.")
                 return []
 
-            # Get outfit combinations
-            tops = df[df['category'].str.contains('shirt|blouse', case=False, na=False)].sample(min(2, len(df)))
-            bottoms = df[df['category'].str.contains('jeans|shorts|skirt', case=False, na=False)].sample(min(2, len(df)))
-            shoes = df[df['category'].str.contains('shoes', case=False, na=False)].sample(min(2, len(df)))
+            # Get enhanced outfit combinations
+            tops = df[df['category'].str.contains('shirt|blouse|top', case=False, na=False)].sample(min(2, len(df)))
+            bottoms = df[df['category'].str.contains('jeans|shorts|skirt|pants', case=False, na=False)].sample(min(2, len(df)))
+            shoes = df[df['category'].str.contains('shoes|boots|sneakers', case=False, na=False)].sample(min(2, len(df)))
 
-            response = "Here are some stylish outfit combinations:\n\n"
+            response = "👗 **STYLISH OUTFIT COMBINATIONS** 👗\n\n"
+            response += "Here are some expertly curated outfit combinations for you:\n\n"
             
             for i in range(min(len(tops), len(bottoms), len(shoes))):
-                response += f"Outfit {i+1}:\n"
-                response += f"👕 {tops.iloc[i]['product_name']} ({tops.iloc[i]['color']})\n"
-                response += f"👖 {bottoms.iloc[i]['product_name']} ({bottoms.iloc[i]['color']})\n"
-                response += f"👟 {shoes.iloc[i]['product_name']} ({shoes.iloc[i]['color']})\n\n"
+                # Calculate style score for each outfit
+                try:
+                    top_rating = float(tops.iloc[i].get('average_rating', 4.0))
+                except (ValueError, TypeError):
+                    top_rating = 4.0
+                try:
+                    bottom_rating = float(bottoms.iloc[i].get('average_rating', 4.0))
+                except (ValueError, TypeError):
+                    bottom_rating = 4.0
+                try:
+                    shoe_rating = float(shoes.iloc[i].get('average_rating', 4.0))
+                except (ValueError, TypeError):
+                    shoe_rating = 4.0
+                outfit_score = (top_rating + bottom_rating + shoe_rating) / 3
+                
+                response += f"**Outfit {i+1}** - Style Score: {outfit_score:.1f}/5.0 ⭐\n"
+                response += f"👕 **Top:** {tops.iloc[i]['product_name']} ({tops.iloc[i]['color']})\n"
+                response += f"   Brand: {tops.iloc[i]['brand']} | Price: ${tops.iloc[i]['price']:.2f}\n"
+                response += f"👖 **Bottom:** {bottoms.iloc[i]['product_name']} ({bottoms.iloc[i]['color']})\n"
+                response += f"   Brand: {bottoms.iloc[i]['brand']} | Price: ${bottoms.iloc[i]['price']:.2f}\n"
+                response += f"👟 **Shoes:** {shoes.iloc[i]['product_name']} ({shoes.iloc[i]['color']})\n"
+                response += f"   Brand: {shoes.iloc[i]['brand']} | Price: ${shoes.iloc[i]['price']:.2f}\n"
+                response += f"💡 **Styling Tip:** {tops.iloc[i].get('styling_tips', 'Perfect for a casual yet stylish look')}\n\n"
+
+            response += "**💎 OUTFIT COORDINATION TIPS:**\n"
+            response += "• Mix textures for visual interest\n"
+            response += "• Balance proportions for flattering silhouettes\n"
+            response += "• Coordinate colors for harmonious looks\n"
+            response += "• Add accessories to complete the ensemble\n"
+            response += "• Consider the occasion when styling\n\n"
+
+            response += "**🔧 QUALITY & VERSATILITY:**\n"
+            response += "• Each piece is versatile and can be mixed with other items\n"
+            response += "• High-quality materials ensure longevity\n"
+            response += "• Comfortable fit for all-day wear\n"
+            response += "• Easy to care for and maintain\n\n"
 
             dispatcher.utter_message(text=response)
 

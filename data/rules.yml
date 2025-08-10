@@ -26,6 +26,36 @@ rules:
   - intent: deny
   - action: utter_goodbye
 
+- rule: Handle color advice requests
+  steps:
+  - intent: ask_color_advice
+  - action: utter_color_advice
+
+- rule: Handle budget advice requests
+  steps:
+  - intent: ask_budget_advice
+  - action: utter_budget_advice
+
+- rule: Handle dress requests
+  steps:
+  - intent: ask_dresses
+  - action: action_give_recommendation
+
+- rule: Handle tops requests
+  steps:
+  - intent: ask_tops
+  - action: action_give_recommendation
+
+- rule: Handle pants requests
+  steps:
+  - intent: ask_pants
+  - action: action_give_recommendation
+
+- rule: Handle shoes requests
+  steps:
+  - intent: ask_shoes
+  - action: action_give_recommendation
+
 - rule: Smart fallback (Gemini for fashion, default for others)
   steps:
   - intent: nlu_fallback
