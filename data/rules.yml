@@ -26,7 +26,7 @@ rules:
   - intent: deny
   - action: utter_goodbye
 
-- rule: Default fallback
+- rule: Smart fallback (Gemini for fashion, default for others)
   steps:
   - intent: nlu_fallback
-  - action: action_default_fallback
+  - action: action_gemini_fallback
